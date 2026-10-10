@@ -18,22 +18,24 @@ const App: React.FC = () => {
 
   return (
     <Layout>
-      <Header style={{ display: "flex", alignItems: "center" }}>
+      <Header style={{ display: "flex", alignItems: "center" }} className="hea">
         <div className="demo-logo" />
         <Menu
+          className="hea"
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={["2"]}
           items={items}
-          style={{ flex: 1, minWidth: 0, backgroundColor: "#cdb4db" }}
+          style={{ flex: 1, minWidth: 0}}
         />
       </Header>
-      <Content style={{ padding: "0 48px" }}>
-        <Breadcrumb style={{ margin: "16px 0" }} />
+      <Content style={{ padding: "0 48px" ,backgroundColor: "#640d14"}}>
+        <Breadcrumb style={{ margin: "16px 0"}} />
         <div
           style={{
             background: colorBgContainer,
-            minHeight: 480,
+            backgroundColor: "#ad2831",
+            minHeight: 580,
             padding: 14,
             borderRadius: borderRadiusLG,
           }}
@@ -41,8 +43,8 @@ const App: React.FC = () => {
           <Buttons />
         </div>
       </Content>
-      <Footer style={{ textAlign: "center" }}>
-        Ant Design ©{currentYear} Created by Ant UED
+      <Footer style={{ textAlign: "center", background: "linear-gradient(to bottom, #432e36, #ad2831)",color:"white"}}>
+        Ant Design ©{currentYear} Created by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
   );
