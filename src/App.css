@@ -1,156 +1,142 @@
 .hea{
-    background: linear-gradient(90deg, #640d14, #ad2831, #ff1493);
+    background-color: #0d1b2a;
     color: #f0f6f6;
 }
 
 .button {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
-  border-radius: 12%;
+  color: rgb(0, 0, 0);
+  border-radius: 8%;
   height: 26px;
   width: 48px;
-  border: 2px solid white;
 }
 
 .button1 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 12%;
   font-size: 1rem;
   height: 48px;
   width: 35px;
-  border: 2px solid white;
 }
 
 .button2 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 12%;
   height: 48px;
   width: 48px;
   font-size: 1rem;
   padding-top: 8px;
-  border: 2px solid white;
 }
 
 .button3 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 6%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   height: 48px;
   width: 94px;
   padding-top: 4px;
-  border: 2px solid white;
 }
 
 .button4 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 6%;
   font-size: 1rem;
   height: 48px;
   width: 64px;
   padding-top: 4px;
-  border: 2px solid white;
 }
 
 .button5 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 6%;
   font-size: 1rem;
   height: 48px;
   width: 92px;
   padding-top: 4px;
-  border: 2px solid white;
 }
 
 .button6 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 6%;
   font-size: 1rem;
   height: 48px;
   width: 98px;
   padding-top: 4px;
-  border: 2px solid white;
 }
 
 .button7 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 6%;
   font-size: 1rem;
   height: 108px;
   width: 48px;
   padding-top: 38px;
-  border: 2px solid white;
 }
 
 .button8 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 6%;
   font-size: 1rem;
   height: 48px;
   width: 118px;
   padding-top: 4px;
-  border: 2px solid white;
 }
 
 .button9 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 6%;
   font-size: 1rem;
   height: 48px;
   width: 174px;
   padding-top: 4px;
-  border: 2px solid white;
 }
 
 .button10 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 4%;
   height: 48px;
   width: 444px;
   padding-top: 4px;
-  border: 2px solid white;
 }
 
 .button11 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 12%;
   font-size: 1rem;
   height: 24px;
   width: 48px;
   padding-top: 4px;
-  border: 2px solid white;
 }
 
 .button12 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 6%;
   font-size: 1rem;
   height: 48px;
   width: 120px;
   padding-top: 4px;
-  border: 2px solid white;
 }
 
 .button13 {
   background-color: rgb(0, 0, 0);
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   border-radius: 12%;
   height: 48px;
   width: 48px;
   font-size: 0.7rem;
   padding-top: 0px;
-  border: 2px solid white;
 }
 
 .container1{
@@ -212,9 +198,65 @@
 
 .tex{
   height: 130px;
-  width: 90vw;
+  width: 70vw;
   background-color: #f1faee;
   color: black;
   font-size: 1rem;
   margin-bottom: 30px;
+}
+
+.row1{
+  background-color: #dcbeee;
+  font-weight: 500;
+  color: white;
+  border: 1px solid #47126b;
+  border-bottom: 4px solid rgb(74, 45, 96);
+}
+
+.row2{
+  background-color: #c29ae1;
+  font-weight: 500;
+  color: white;
+  border: 1px solid #47126b;
+  border-bottom: 4px solid rgb(74, 45, 96);
+}
+
+.row3{
+  background-color: #9d4edd;
+  color: white;
+  font-weight: 500;
+  border: 1px solid #47126b;
+  border-bottom: 4px solid rgb(74, 45, 96);
+}
+
+.row4{
+  background-color: #5a189a;
+  color: white;
+  font-weight: 500;
+  border: 1px solid #47126b;
+  border-bottom: 4px solid rgb(74, 45, 96);
+}
+
+.row5{
+  background-color: #3c096c;
+  color: white;
+  font-weight: 500;
+  border: 1px solid #47126b;
+  border-bottom: 4px solid rgb(74, 45, 96);
+}
+
+.row6{
+  background-color: #240046;
+  color: white;
+  font-weight: 500;
+  border: 1px solid #47126b;
+  border-bottom: 4px solid rgb(74, 45, 96);
+}
+
+.row7{
+  background-color: #10002b;
+  color: white;
+  font-weight: 500;
+  border: 1px solid #47126b;
+  border-bottom: 5px solid #47126b;
 }
