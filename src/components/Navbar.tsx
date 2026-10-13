@@ -1,15 +1,30 @@
 import React from "react";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import Buttons from "./Buttons";
+import { WindowsFilled, AppleFilled } from "@ant-design/icons";
+import { Link, useLocation } from "react-router-dom";
 
 const { Header, Content, Footer } = Layout;
 
-const items = Array.from({ length: 2 }).map((_, index) => ({
+const items = Array.from({ length: 1 }).map((_, index) => ({
   key: index + 1,
-  label: `nav ${index + 1}`,
+  label: (
+    <Link to="/">
+      <WindowsFilled />
+    </Link>
+  ),
 }));
 
-const App: React.FC = () => {
+const items1 = Array.from({ length: 1 }).map((_, index) => ({
+  key: index + 1,
+  label: (
+    <Link to="/AppleB">
+      <AppleFilled />
+    </Link>
+  ),
+}));
+
+const Navbar: React.FC = () => {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
@@ -18,22 +33,25 @@ const App: React.FC = () => {
 
   return (
     <Layout>
-      <Header style={{ display: "flex", alignItems: "center" }}>
+      <Header style={{ display: "flex", alignItems: "center" }} className="hea">
         <div className="demo-logo" />
+        <h1>Keyboard-test</h1>
         <Menu
+          className="hea"
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={["2"]}
-          items={items}
-          style={{ flex: 1, minWidth: 0, backgroundColor: "#cdb4db" }}
+          defaultSelectedKeys={["1"]}
+          items={[...items, ...items1]}
+          style={{ marginLeft: "20px", flex: 1, minWidth: 0 }}
         />
       </Header>
-      <Content style={{ padding: "0 48px" }}>
+      <Content style={{ padding: "0 48px", backgroundColor: "#0d1b2a" }}>
         <Breadcrumb style={{ margin: "16px 0" }} />
         <div
           style={{
             background: colorBgContainer,
-            minHeight: 480,
+            backgroundColor: "#373a49",
+            minHeight: 580,
             padding: 14,
             borderRadius: borderRadiusLG,
           }}
@@ -41,11 +59,13 @@ const App: React.FC = () => {
           <Buttons />
         </div>
       </Content>
-      <Footer style={{ textAlign: "center" }}>
-        Ant Design ©{currentYear} Created by Ant UED
+      <Footer
+        style={{ textAlign: "center", background: "#0d1b2a", color: "white" }}
+      >
+        Keyboard-test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
   );
 };
 
-export default App;
+export default Navbar;
