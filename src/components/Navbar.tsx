@@ -1,21 +1,30 @@
 import React from "react";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import Buttons from "./Buttons";
-import { WindowsFilled,AppleFilled} from "@ant-design/icons";
+import { WindowsFilled, AppleFilled } from "@ant-design/icons";
+import { Link, useLocation } from "react-router-dom";
 
 const { Header, Content, Footer } = Layout;
 
 const items = Array.from({ length: 1 }).map((_, index) => ({
   key: index + 1,
-  label: <WindowsFilled/>,
+  label: (
+    <Link to="/">
+      <WindowsFilled />
+    </Link>
+  ),
 }));
 
 const items1 = Array.from({ length: 1 }).map((_, index) => ({
   key: index + 1,
-  label: <AppleFilled />,
+  label: (
+    <Link to="/AppleB">
+      <AppleFilled />
+    </Link>
+  ),
 }));
 
-const App: React.FC = () => {
+const Navbar: React.FC = () => {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
@@ -32,12 +41,12 @@ const App: React.FC = () => {
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={["1"]}
-          items={[...items,...items1]}
-          style={{ marginLeft: "20px", flex: 1, minWidth: 0}}
+          items={[...items, ...items1]}
+          style={{ marginLeft: "20px", flex: 1, minWidth: 0 }}
         />
       </Header>
-      <Content style={{ padding: "0 48px" ,backgroundColor: "#0d1b2a"}}>
-        <Breadcrumb style={{ margin: "16px 0"}} />
+      <Content style={{ padding: "0 48px", backgroundColor: "#0d1b2a" }}>
+        <Breadcrumb style={{ margin: "16px 0" }} />
         <div
           style={{
             background: colorBgContainer,
@@ -50,11 +59,13 @@ const App: React.FC = () => {
           <Buttons />
         </div>
       </Content>
-      <Footer style={{ textAlign: "center", background: "#0d1b2a",color:"white"}}>
-        Keyboard-test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764; 
+      <Footer
+        style={{ textAlign: "center", background: "#0d1b2a", color: "white" }}
+      >
+        Keyboard-test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
   );
 };
 
-export default App;
+export default Navbar;
