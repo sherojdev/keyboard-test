@@ -1,6 +1,14 @@
 .heaa {
-  background-color: #fec5bb;
+  background-color: transparent;
   color: #f0f6f6;
+}
+
+.heaa .ant-menu-item {
+  background: transparent !important;
+}
+.heaa .ant-menu-item-selected {
+  background: rgba(66, 208, 221, 0.923) !important;
+  border: 5px solid white;
 }
 
 .abutton {

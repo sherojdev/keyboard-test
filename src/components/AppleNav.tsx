@@ -16,7 +16,7 @@ const items = Array.from({ length: 1 }).map((_, index) => ({
 }));
 
 const items1 = Array.from({ length: 1 }).map((_, index) => ({
-  key: index + 1,
+  key: index + 2,
   label: (
     <Link to="/AppleB">
       <AppleFilled />
@@ -25,35 +25,37 @@ const items1 = Array.from({ length: 1 }).map((_, index) => ({
 }));
 
 const Navbar: React.FC = () => {
+
+  const { pathname } = useLocation();
+
   const {
-    token: { colorBgContainer, borderRadiusLG },
+    token: { borderRadiusLG },
   } = theme.useToken();
 
   const currentYear = new Date().getFullYear();
 
   return (
-    <Layout>
-      <Header
-        style={{ display: "flex", alignItems: "center" }}
-        className="heaa"
-      >
+    <Layout style={{
+    minHeight: "100vh",
+    background: "linear-gradient(150deg, #FFC4B8, #FFE5B4, #BBF7D0)" ,
+  }}>
+      <Header style={{ display: "flex", alignItems: "center" }} className="heaa" >
         <div className="demo-logo" />
-        <h1 style={{ color: "#1d3557" }}>Keyboard-test</h1>
+        <h1 style={{ color: "#1d3557" }}>Keyboard-Test</h1>
         <Menu
           className="heaa"
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={["1"]}
+          selectedKeys={[pathname === "/AppleB" ? "2" : "1"]}
           items={[...items, ...items1]}
           style={{ marginLeft: "20px", flex: 1, minWidth: 0 }}
         />
       </Header>
-      <Content style={{ padding: "0 48px", backgroundColor: "#fec5bb" }}>
+      <Content style={{ padding: "0 48px", background: "transparent" }}>
         <Breadcrumb style={{ margin: "16px 0" }} />
         <div
           style={{
-            background: colorBgContainer,
-            backgroundColor: "#f8edeb",
+            background: "linear-gradient(145deg, #FFFFFF, #F8EDEB, #F3DCD7)",
             minHeight: 580,
             padding: 14,
             borderRadius: borderRadiusLG,
@@ -63,9 +65,9 @@ const Navbar: React.FC = () => {
         </div>
       </Content>
       <Footer
-        style={{ textAlign: "center", background: "#fec5bb", color: "black" }}
+        style={{ textAlign: "center", background: "transparent" }}
       >
-        Keyboard-test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
+        Keyboard-Test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
   );

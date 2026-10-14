@@ -95,7 +95,7 @@ export default function Buttons() {
         abutton.forEach((btn) => {
           e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -110,7 +110,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton1.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -125,7 +125,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton2.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -140,7 +140,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton3.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -155,7 +155,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton4.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -170,7 +170,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton5.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+           btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -185,7 +185,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton6.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -200,7 +200,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton7.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -215,7 +215,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton8.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -230,7 +230,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton9.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -246,7 +246,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton10.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -262,7 +262,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton11.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -278,7 +278,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton12.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -294,7 +294,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         abutton13.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#1e88e5";
+            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {

@@ -1,6 +1,15 @@
 .hea {
-  background-color: #0d1b2a;
+  background-color: transparent;
   color: #f0f6f6;
+}
+
+.hea .ant-menu-item {
+  background: transparent !important;
+}
+.hea .ant-menu-item-selected {
+  background: rgba(66, 208, 221, 0.923) !important;
+  border: 5px solid white;
+  margin-top: 2px;
 }
 
 .button {
@@ -213,6 +222,22 @@
   position: relative;
   top: 50px;
   left: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", "Arial", "sans-serif";
+  border-radius: 3%;
+  background-color: #3dda09;
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  border: 3px solid #253237;
+  visibility: hidden;
+}
+
+.rtex1 {
+  height: 30px;
+  width: 10vw;
+  position: relative;
+  top: -10px;
+  left: 230px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", "Arial", "sans-serif";
   border-radius: 3%;
   background-color: #3dda09;

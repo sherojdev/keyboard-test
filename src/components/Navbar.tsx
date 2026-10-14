@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 import { WindowsFilled, AppleFilled } from "@ant-design/icons";
 import { Link, useLocation } from "react-router-dom";
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content, Footer} = Layout;
 
 const items = Array.from({ length: 1 }).map((_, index) => ({
   key: index + 1,
@@ -16,7 +16,7 @@ const items = Array.from({ length: 1 }).map((_, index) => ({
 }));
 
 const items1 = Array.from({ length: 1 }).map((_, index) => ({
-  key: index + 1,
+  key: index + 2,
   label: (
     <Link to="/AppleB">
       <AppleFilled />
@@ -25,32 +25,38 @@ const items1 = Array.from({ length: 1 }).map((_, index) => ({
 }));
 
 const Navbar: React.FC = () => {
+
+  const { pathname } = useLocation();
+
   const {
-    token: { colorBgContainer, borderRadiusLG },
+    token: { borderRadiusLG },
   } = theme.useToken();
 
   const currentYear = new Date().getFullYear();
 
   return (
-    <Layout>
+    <Layout  style={{
+    minHeight: "100vh",
+    background: "linear-gradient(150deg, #1E1B4B, #7C3AED, #F472B6)",
+  }}>
       <Header style={{ display: "flex", alignItems: "center" }} className="hea">
         <div className="demo-logo" />
-        <h1>Keyboard-test</h1>
+        <h1>Keyboard-Test</h1>
         <Menu
           className="hea"
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={["1"]}
-          items={[...items, ...items1]}
+          selectedKeys={[pathname === "/" ? "1" : "2"]}
+          items={[...items ,...items1]}
           style={{ marginLeft: "20px", flex: 1, minWidth: 0 }}
         />
       </Header>
-      <Content style={{ padding: "0 48px", backgroundColor: "#0d1b2a" }}>
+      
+      <Content style={{ padding: "0 48px",  background: "transparent"}}>
         <Breadcrumb style={{ margin: "16px 0" }} />
         <div
           style={{
-            background: colorBgContainer,
-            backgroundColor: "#373a49",
+            background: "linear-gradient(to bottom, #0F172A, #334155)",
             minHeight: 580,
             padding: 14,
             borderRadius: borderRadiusLG,
@@ -59,12 +65,14 @@ const Navbar: React.FC = () => {
           <Buttons />
         </div>
       </Content>
+    
       <Footer
-        style={{ textAlign: "center", background: "#0d1b2a", color: "white" }}
+        style={{ textAlign: "center",  background: "transparent", color: "white" }}
       >
-        Keyboard-test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
+        Keyboard-Test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
+
   );
 };
 

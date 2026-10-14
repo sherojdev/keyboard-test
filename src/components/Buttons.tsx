@@ -104,6 +104,7 @@ export default function Buttons() {
   const line6s4b = [""];
   const line6s5 = ["0"];
   const line6s6 = ["."];
+  
 
   useEffect(() => {
     const handlekeyPress = (): void => {
@@ -113,7 +114,7 @@ export default function Buttons() {
         button.forEach((btn) => {
           e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -128,7 +129,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button1.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -143,7 +144,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button2.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -158,7 +159,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button3.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -173,7 +174,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button4.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -188,7 +189,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button5.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -203,7 +204,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button6.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -218,7 +219,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button7.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -233,7 +234,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button8.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -248,7 +249,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button9.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -263,7 +264,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button10.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -278,7 +279,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button11.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -293,7 +294,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button12.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
@@ -308,7 +309,7 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button13.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(160deg, #7F1D1D, #EA580C, #FACC15)";
             btn.style.color = "white";
             btn.style.border = "2px solid #f78a40";
             if (text) {
