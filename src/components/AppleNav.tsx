@@ -1,5 +1,5 @@
 import React from "react";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { Layout, Menu } from "antd";
 import AppleB from "./AppleB";
 import { WindowsFilled, AppleFilled } from "@ant-design/icons";
 import { Link, useLocation } from "react-router-dom";
@@ -28,45 +28,27 @@ const Navbar: React.FC = () => {
 
   const { pathname } = useLocation();
 
-  const {
-    token: { borderRadiusLG },
-  } = theme.useToken();
-
   const currentYear = new Date().getFullYear();
 
   return (
-    <Layout style={{
-    minHeight: "100vh",
-    background: "linear-gradient(150deg, #FFC4B8, #FFE5B4, #BBF7D0)" ,
-  }}>
-      <Header style={{ display: "flex", alignItems: "center" }} className="heaa" >
+    <Layout className="design-mac">
+      <Header className="navbar-mac" >
         <div className="demo-logo" />
-        <h1 style={{ color: "#1d3557" }}>Keyboard-Test</h1>
+        <h1 className="project-mac">Keyboard-Test</h1>
         <Menu
-          className="heaa"
+          className="navbar-menu-mac"
           theme="dark"
           mode="horizontal"
           selectedKeys={[pathname === "/AppleB" ? "2" : "1"]}
           items={[...items, ...items1]}
-          style={{ marginLeft: "20px", flex: 1, minWidth: 0 }}
         />
       </Header>
-      <Content style={{ padding: "0 48px", background: "transparent" }}>
-        <Breadcrumb style={{ margin: "16px 0" }} />
-        <div
-          style={{
-            background: "linear-gradient(145deg, #FFFFFF, #F8EDEB, #F3DCD7)",
-            minHeight: 580,
-            padding: 14,
-            borderRadius: borderRadiusLG,
-          }}
-        >
+      <Content className="workspace-mac pt-6 pl-9">
+        <div className="rounded-xl inner-workspace-mac mt-6 ml-5"   >
           <AppleB />
         </div>
       </Content>
-      <Footer
-        style={{ textAlign: "center", background: "transparent" }}
-      >
+      <Footer className="base-mac">
         Keyboard-Test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>

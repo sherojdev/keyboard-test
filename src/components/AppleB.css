@@ -1,17 +1,71 @@
-.heaa {
+@import "tailwindcss";
+
+.design-mac {
+  min-height: 100vh;
+  background: linear-gradient(150deg, #FFC4B8, #FFE5B4, #BBF7D0);
+}
+
+.navbar-mac {
   background-color: transparent;
   color: #f0f6f6;
+  display: flex; 
+  align-Items: center;
 }
 
-.heaa .ant-menu-item {
+.navbar-mac .ant-menu-item {
   background: transparent !important;
+  display: flex; 
+  align-Items: center;
 }
-.heaa .ant-menu-item-selected {
+.navbar-mac .ant-menu-item-selected {
   background: rgba(66, 208, 221, 0.923) !important;
-  border: 5px solid white;
+  border: 5px solid rgb(246, 28, 137);
+  display: flex; 
+  align-Items: center;
 }
 
-.abutton {
+.navbar-menu-mac {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #f0f6f6;
+  margin-left: 20px;
+  flex: 1;
+  min-width: 0;
+}
+
+
+.workspace-mac {
+  background: transparent;
+}
+
+.inner-workspace-mac {
+  background: linear-gradient(145deg, #FFFFFF, #F8EDEB, #F3DCD7);
+  min-height: 580;
+  padding: 14px 16px;
+  height: 37vw;
+  width: 90vw;
+}
+
+.base-mac {
+  text-align: center;
+  background: transparent;
+  color: rgb(16, 11, 11);
+}
+
+.project-mac{
+  color: #1d3557;
+}
+
+#display-box-mac {
+  height: 130px;
+  width: 70vw;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+.mac-button {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 8%;
@@ -19,7 +73,7 @@
   width: 52px;
 }
 
-.abutton1 {
+.mac-button1 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 12%;
@@ -28,7 +82,7 @@
   width: 35px;
 }
 
-.abutton2 {
+.mac-button2 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 12%;
@@ -38,7 +92,7 @@
   padding-top: 8px;
 }
 
-.abutton3 {
+.mac-button3 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 6%;
@@ -48,7 +102,7 @@
   padding-top: 4px;
 }
 
-.abutton4 {
+.mac-button4 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 6%;
@@ -58,7 +112,7 @@
   padding-top: 4px;
 }
 
-.abutton5 {
+.mac-button5 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 3%;
@@ -68,7 +122,7 @@
   padding-top: 4px;
 }
 
-.abutton6 {
+.mac-button6 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 3%;
@@ -78,7 +132,7 @@
   padding-top: 4px;
 }
 
-.abutton7 {
+.mac-button7 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 6%;
@@ -88,7 +142,7 @@
   padding-top: 38px;
 }
 
-.abutton8 {
+.mac-button8 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 3%;
@@ -98,7 +152,7 @@
   padding-top: 4px;
 }
 
-.abutton9 {
+.mac-button9 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 3%;
@@ -108,7 +162,7 @@
   padding-top: 4px;
 }
 
-.abutton10 {
+.mac-button10 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 2%;
@@ -117,7 +171,7 @@
   padding-top: 4px;
 }
 
-.abutton11 {
+.mac-button11 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 12%;
@@ -127,7 +181,7 @@
   padding-top: 4px;
 }
 
-.abutton12 {
+.mac-button12 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 6%;
@@ -137,7 +191,7 @@
   padding-top: 4px;
 }
 
-.abutton13 {
+.mac-button13 {
   background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   border-radius: 12%;
@@ -147,7 +201,7 @@
   padding-top: 0px;
 }
 
-.containerr1 {
+.container1-mac {
   height: 20px;
   width: 90%;
   display: flex;
@@ -156,7 +210,7 @@
   justify-content: space-evenly;
 }
 
-.containerr2 {
+.container2-mac {
   height: 20px;
   width: 90%;
   display: flex;
@@ -166,7 +220,7 @@
   margin-top: 20px;
 }
 
-.containerr3 {
+.container3-mac {
   height: 20px;
   width: 90%;
   display: flex;
@@ -176,7 +230,7 @@
   margin-top: 40px;
 }
 
-.containerr4 {
+.container4-mac {
   height: 20px;
   width: 90%;
   display: flex;
@@ -186,7 +240,7 @@
   margin-top: 40px;
 }
 
-.containerr5 {
+.container5-mac {
   height: 20px;
   width: 90%;
   display: flex;
@@ -196,7 +250,7 @@
   margin-top: 40px;
 }
 
-.containerr6 {
+.container6-mac {
   height: 20px;
   width: 90%;
   display: flex;
@@ -206,28 +260,17 @@
   margin-top: 40px;
 }
 
-.containerr7 {
+.container7-mac {
   height: 20px;
   width: 95%;
   display: flex;
   position: absolute;
-  left: 528px;
+  left: 512px;
   justify-content: space-evenly;
   margin-top: 40px;
 }
 
-#texx {
-  height: 130px;
-  width: 70vw;
-  position: relative;
-  left: 150px;
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-  font-size: 1rem;
-  margin-bottom: 30px;
-}
-
-.rtexx {
+.return-text-mac {
   height: 30px;
   width: 10vw;
   position: relative;
@@ -243,7 +286,7 @@
   visibility: hidden;
 }
 
-.roww1 {
+.row1-mac {
   background-color: #ccff33;
   font-weight: 600;
   color: white;
@@ -251,7 +294,7 @@
   border-bottom: 4px solid #183a20;
 }
 
-.roww2 {
+.row2-mac {
   background-color: #9ef01a;
   font-weight: 500;
   color: white;
@@ -259,7 +302,7 @@
   border-bottom: 4px solid #183a20;
 }
 
-.roww3 {
+.row3-mac {
   background-color: #70e000;
   color: white;
   font-weight: 500;
@@ -267,7 +310,7 @@
   border-bottom: 4px solid #183a20;
 }
 
-.roww4 {
+.row4-mac {
   background-color: #38b000;
   color: white;
   font-weight: 500;
@@ -275,7 +318,7 @@
   border-bottom: 4px solid #183a20;
 }
 
-.roww5 {
+.row5-mac {
   background-color: #008000;
   color: white;
   font-weight: 500;
@@ -283,7 +326,7 @@
   border-bottom: 4px solid #183a20;
 }
 
-.roww6 {
+.row6-mac {
   background-color: #007200;
   color: white;
   font-weight: 500;
@@ -291,7 +334,7 @@
   border-bottom: 4px solid #183a20;
 }
 
-.roww7 {
+.row7-mac {
   background-color: #006400;
   color: white;
   font-weight: 500;
