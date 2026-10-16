@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu } from "antd";
+import { Breadcrumb, Layout, Menu, theme } from "antd";
 import AppleB from "./AppleB";
 import { WindowsFilled, AppleFilled } from "@ant-design/icons";
 import { Link, useLocation } from "react-router-dom";
@@ -16,7 +16,7 @@ const items = Array.from({ length: 1 }).map((_, index) => ({
 }));
 
 const items1 = Array.from({ length: 1 }).map((_, index) => ({
-  key: index + 2,
+  key: index + 1,
   label: (
     <Link to="/AppleB">
       <AppleFilled />
@@ -25,31 +25,47 @@ const items1 = Array.from({ length: 1 }).map((_, index) => ({
 }));
 
 const Navbar: React.FC = () => {
-
-  const { pathname } = useLocation();
+  const {
+    token: { colorBgContainer, borderRadiusLG },
+  } = theme.useToken();
 
   const currentYear = new Date().getFullYear();
 
   return (
-    <Layout className="design-mac">
-      <Header className="navbar-mac" >
+    <Layout>
+      <Header
+        style={{ display: "flex", alignItems: "center" }}
+        className="heaa"
+      >
         <div className="demo-logo" />
-        <h1 className="project-mac">Keyboard-Test</h1>
+        <h1 style={{ color: "#1d3557" }}>Keyboard-test</h1>
         <Menu
-          className="navbar-menu-mac"
+          className="heaa"
           theme="dark"
           mode="horizontal"
-          selectedKeys={[pathname === "/AppleB" ? "2" : "1"]}
+          defaultSelectedKeys={["1"]}
           items={[...items, ...items1]}
+          style={{ marginLeft: "20px", flex: 1, minWidth: 0 }}
         />
       </Header>
-      <Content className="workspace-mac pt-6 pl-9">
-        <div className="rounded-xl inner-workspace-mac mt-6 ml-5"   >
+      <Content style={{ padding: "0 48px", backgroundColor: "#fec5bb" }}>
+        <Breadcrumb style={{ margin: "16px 0" }} />
+        <div
+          style={{
+            background: colorBgContainer,
+            backgroundColor: "#f8edeb",
+            minHeight: 580,
+            padding: 14,
+            borderRadius: borderRadiusLG,
+          }}
+        >
           <AppleB />
         </div>
       </Content>
-      <Footer className="base-mac">
-        Keyboard-Test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
+      <Footer
+        style={{ textAlign: "center", background: "#fec5bb", color: "black" }}
+      >
+        Keyboard-test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
   );

@@ -89,13 +89,13 @@ export default function Buttons() {
 
   useEffect(() => {
     const handlekeyPress = (): void => {
-      let mbutton = document.querySelectorAll<HTMLButtonElement>(".mac-button");
-      let text = document.querySelector<HTMLDivElement>(".return-text-mac");
+      let abutton = document.querySelectorAll<HTMLButtonElement>(".abutton");
+      let text = document.querySelector<HTMLDivElement>(".rtexx");
       window.addEventListener("keydown", (e) => {
-        mbutton.forEach((btn) => {
+        abutton.forEach((btn) => {
           e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -106,11 +106,11 @@ export default function Buttons() {
         });
       });
 
-      let mbutton1 = document.querySelectorAll<HTMLButtonElement>(".mac-button1");
+      let abutton1 = document.querySelectorAll<HTMLButtonElement>(".abutton1");
       window.addEventListener("keydown", (e) => {
-        mbutton1.forEach((btn) => {
+        abutton1.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -121,11 +121,11 @@ export default function Buttons() {
         });
       });
 
-      let mbutton2 = document.querySelectorAll<HTMLButtonElement>(".mac-button2");
+      let abutton2 = document.querySelectorAll<HTMLButtonElement>(".abutton2");
       window.addEventListener("keydown", (e) => {
-        mbutton2.forEach((btn) => {
+        abutton2.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -136,11 +136,11 @@ export default function Buttons() {
         });
       });
 
-      let mbutton3 = document.querySelectorAll<HTMLButtonElement>(".mac-button3");
+      let abutton3 = document.querySelectorAll<HTMLButtonElement>(".abutton3");
       window.addEventListener("keydown", (e) => {
-        mbutton3.forEach((btn) => {
+        abutton3.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -151,11 +151,11 @@ export default function Buttons() {
         });
       });
 
-      let mbutton4 = document.querySelectorAll<HTMLButtonElement>(".mac-button4");
+      let abutton4 = document.querySelectorAll<HTMLButtonElement>(".abutton4");
       window.addEventListener("keydown", (e) => {
-        mbutton4.forEach((btn) => {
+        abutton4.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -166,11 +166,11 @@ export default function Buttons() {
         });
       });
 
-      let mbutton5 = document.querySelectorAll<HTMLButtonElement>(".mac-button5");
+      let abutton5 = document.querySelectorAll<HTMLButtonElement>(".abutton5");
       window.addEventListener("keydown", (e) => {
-        mbutton5.forEach((btn) => {
+        abutton5.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-           btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -181,11 +181,11 @@ export default function Buttons() {
         });
       });
 
-      let mbutton6 = document.querySelectorAll<HTMLButtonElement>(".mac-button6");
+      let abutton6 = document.querySelectorAll<HTMLButtonElement>(".abutton6");
       window.addEventListener("keydown", (e) => {
-        mbutton6.forEach((btn) => {
+        abutton6.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -196,11 +196,11 @@ export default function Buttons() {
         });
       });
 
-      let mbutton7 = document.querySelectorAll<HTMLButtonElement>(".mac-button7");
+      let abutton7 = document.querySelectorAll<HTMLButtonElement>(".abutton7");
       window.addEventListener("keydown", (e) => {
-        mbutton7.forEach((btn) => {
+        abutton7.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -211,11 +211,11 @@ export default function Buttons() {
         });
       });
 
-      let mbutton8 = document.querySelectorAll<HTMLButtonElement>(".mac-button8");
+      let abutton8 = document.querySelectorAll<HTMLButtonElement>(".abutton8");
       window.addEventListener("keydown", (e) => {
-        mbutton8.forEach((btn) => {
+        abutton8.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -226,11 +226,11 @@ export default function Buttons() {
         });
       });
 
-      let mbutton9 = document.querySelectorAll<HTMLButtonElement>(".mac-button9");
+      let abutton9 = document.querySelectorAll<HTMLButtonElement>(".abutton9");
       window.addEventListener("keydown", (e) => {
-        mbutton9.forEach((btn) => {
+        abutton9.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -241,11 +241,12 @@ export default function Buttons() {
         });
       });
 
-      let mbutton10 = document.querySelectorAll<HTMLButtonElement>(".mac-button10");
+      let abutton10 =
+        document.querySelectorAll<HTMLButtonElement>(".abutton10");
       window.addEventListener("keydown", (e) => {
-        mbutton10.forEach((btn) => {
+        abutton10.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -256,12 +257,12 @@ export default function Buttons() {
         });
       });
 
-      let mbutton11 =
-        document.querySelectorAll<HTMLButtonElement>(".mac-button11");
+      let abutton11 =
+        document.querySelectorAll<HTMLButtonElement>(".abutton11");
       window.addEventListener("keydown", (e) => {
-        mbutton11.forEach((btn) => {
+        abutton11.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -272,12 +273,12 @@ export default function Buttons() {
         });
       });
 
-      let mbutton12 =
-        document.querySelectorAll<HTMLButtonElement>(".mac-button12");
+      let abutton12 =
+        document.querySelectorAll<HTMLButtonElement>(".abutton12");
       window.addEventListener("keydown", (e) => {
-        mbutton12.forEach((btn) => {
+        abutton12.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -288,12 +289,12 @@ export default function Buttons() {
         });
       });
 
-      let mbutton13 =
-        document.querySelectorAll<HTMLButtonElement>(".mac-button13");
+      let abutton13 =
+        document.querySelectorAll<HTMLButtonElement>(".abutton13");
       window.addEventListener("keydown", (e) => {
-        mbutton13.forEach((btn) => {
+        abutton13.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
+            btn.style.backgroundColor = "#1e88e5";
             btn.style.color = "white";
             btn.style.border = "2px solid #0b0860";
             if (text) {
@@ -312,477 +313,489 @@ export default function Buttons() {
 
   return (
     <>
-      <div className="container mb-8 rounded-xl mx-32" id="display-box-mac">
-        <div className="return-text-mac"></div>
+      <div className="container" id="texx">
+        <div className="rtexx"></div>
       </div>
-      <div className="container1-mac">
+      <div className="containerr1">
         {line1a.map((btn) => (
-          <div className="mac-button row1-mac" data-key="ESCAPE">
-            {btn}
+          <div className="abutton roww1" data-key="ESCAPE">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1b.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F1">
-            {btn}
+          <div className="abutton roww1" data-key="F1">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1c.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F2">
-            {btn}
+          <div className="abutton roww1" data-key="F2">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1d.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F3">
-            {btn}
+          <div className="abutton roww1" data-key="F3">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1e.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F4">
+          <div className="abutton roww1" data-key="F4">
             {" "}
             {btn}{" "}
           </div>
         ))}
         {line1f.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F5">
-            {btn}
+          <div className="abutton roww1" data-key="F5">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1g.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F6">
-            {btn}
+          <div className="abutton roww1" data-key="F6">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1h.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F7">
-            
-            {btn}
+          <div className="abutton roww1" data-key="F7">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1i.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F8">
-            
-            {btn}
+          <div className="abutton roww1" data-key="F8">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1j.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F9">
-            
-            {btn}
+          <div className="abutton roww1" data-key="F9">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1k.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F10">
-            
-            {btn}
+          <div className="abutton roww1" data-key="F10">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1l.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F11">
-            
-            {btn}
+          <div className="abutton roww1" data-key="F11">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1m.map((btn) => (
-          <div className="mac-button row1-mac" data-key="F12">
-            
-            {btn}
+          <div className="abutton roww1" data-key="F12">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line1n.map((btn) => (
-          <div className="mac-button row1-mac" data-key="">
-            
+          <div className="abutton roww1" data-key="">
+            {" "}
             <PoweroffOutlined />
-            {btn}
+            {btn}{" "}
           </div>
         ))}
       </div>
-      <div className="container2-mac">
+      <div className="containerr2">
         {line2s1.map((btn) => (
-          <div className="mac-button1 row1-mac" data-key="BACKQUOTE">
-            
-            {btn}
+          <div className="abutton1 roww2" data-key="BACKQUOTE">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2a.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT1">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT1">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2b.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT2">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT2">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2c.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT3">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT3">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2d.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT4">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT4">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2e.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT5">
-          
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT5">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2f.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT6">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT6">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2g.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT7">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT7">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2h.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT8">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT8">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2i.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT9">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT9">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2j.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="DIGIT0">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="DIGIT0">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2k.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="MINUS">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="MINUS">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s2l.map((btn) => (
-          <div className="mac-button2  row1-mac" data-key="EQUAL">
-            
-            {btn}
+          <div className="abutton2 roww2" data-key="EQUAL">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line2s3.map((btn) => (
-          <div className="mac-button3 row1-mac" data-key="DELETE">
-            
-            {btn}
+          <div className="abutton3 roww2" data-key="DELETE">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
       </div>
-      <div className="container3-mac">
+      <div className="containerr3">
         {line3s1.map((btn) => (
-          <div className="mac-button4 row3-mac" data-key="TAB">
-            
-            {btn}
+          <div className="abutton4 roww3" data-key="TAB">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2a.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYQ">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="KEYQ">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2b.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYW">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="KEYW">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2c.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYE">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="KEYE">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2d.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYR">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="KEYR">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2e.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYT">
+          <div className="abutton2 roww3" data-key="KEYT">
             {" "}
             {btn}{" "}
           </div>
         ))}
         {line3s2f.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYY">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="KEYY">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2g.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYU">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="KEYU">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2h.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYI">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="KEYI">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2i.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYO">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="KEYO">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2j.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="KEYP">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="KEYP">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2k.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="BRACKETLEFT">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="BRACKETLEFT">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s2l.map((btn) => (
-          <div className="mac-button2  row3-mac" data-key="BRACKETRIGHT">
-            
-            {btn}
+          <div className="abutton2 roww3" data-key="BRACKETRIGHT">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line3s3.map((btn) => (
-          <div className="mac-button4 row3-mac" data-key="BACKSLASH">
-            
-            {btn}
+          <div className="abutton4 roww3" data-key="BACKSLASH">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
       </div>
-      <div className="container4-mac">
+      <div className="containerr4">
         {line4s1.map((btn) => (
-          <div className="mac-button5 row4-mac" data-key="CAPSLOCK">
-            
-            {btn}
+          <div className="abutton5 roww4" data-key="CAPSLOCK">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2a.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="KEYA">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="KEYA">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2b.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="KEYS">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="KEYS">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2c.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="KEYD">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="KEYD">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2d.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="KEYF">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="KEYF">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2e.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="KEYG">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="KEYG">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2f.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="KEYH">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="KEYH">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2g.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="KEYJ">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="KEYJ">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2h.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="KEYK">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="KEYK">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2i.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="KEYL">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="KEYL">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2j.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="SEMICOLON">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="SEMICOLON">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s2k.map((btn) => (
-          <div className="mac-button2  row4-mac" data-key="QUOTE">
-            
-            {btn}
+          <div className="abutton2 roww4" data-key="QUOTE">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line4s3.map((btn) => (
-          <div className="mac-button6 row4-mac" data-key="ENTER">
-            
-            {btn}
+          <div className="abutton6 roww4" data-key="ENTER">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
       </div>
-      <div className="container5-mac">
+      <div className="containerr5">
         {line5s1.map((btn) => (
-          <div className="mac-button8 row5-mac" data-key="SHIFTLEFT">
-            
-            {btn}
+          <div className="abutton8 roww5" data-key="SHIFTLEFT">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2a.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="KEYZ">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="KEYZ">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2b.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="KEYX">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="KEYX">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2c.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="KEYC">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="KEYC">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2d.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="KEYV">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="KEYV">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2e.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="KEYB">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="KEYB">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2f.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="KEYN">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="KEYN">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2g.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="KEYM">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="KEYM">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2h.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="COMMA">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="COMMA">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2i.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="PERIOD">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="PERIOD">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s2j.map((btn) => (
-          <div className="mac-button2  row5-mac" data-key="SLASH">
-            
-            {btn}
+          <div className="abutton2 roww5" data-key="SLASH">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line5s1.map((btn) => (
-          <div className="mac-button9 row5-mac" data-key="SHIFTRIGHT">
-            {btn}
+          <div className="abutton9 roww5" data-key="SHIFTRIGHT">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
       </div>
-      <div className="container6-mac">
+      <div className="containerr6">
         {line6s1a.map((btn) => (
-          <div className="mac-button2 row6-mac" data-key="">
-            {btn}
+          <div className="abutton2 roww6" data-key="">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line6s1b.map((btn) => (
-          <div className="mac-button4 row6-mac" data-key="CONTROLLEFT">
-            {btn}
+          <div className="abutton4 roww6" data-key="CONTROLLEFT">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line6s1c.map((btn) => (
-          <div className="mac-button4 row6-mac" data-key="ALTLEFT">
-            {btn}
+          <div className="abutton4 roww6" data-key="ALTLEFT">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line6s1d.map((btn) => (
-          <div className="mac-button4 row6-mac" data-key="METALEFT">
+          <div className="abutton4 roww6" data-key="METALEFT">
+            {" "}
             <MacCommandFilled />
-            {btn}
+            {btn}{" "}
           </div>
         ))}
         {line6s2.map((btn) => (
-          <div className="mac-button10 row6-mac" data-key="SPACE">
-            {btn}
+          <div className="abutton10 roww6" data-key="SPACE">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line6s3a.map((btn) => (
-          <div className="mac-button4 row6-mac" data-key="METARIGHT">
+          <div className="abutton4 roww6" data-key="METARIGHT">
             <MacCommandFilled />
-            {btn}
+            {btn}{" "}
           </div>
         ))}
         {line6s3b.map((btn) => (
-          <div className="mac-button4 row6-mac" data-key="ALTRIGHT">
-            
-            {btn}
+          <div className="abutton4 roww6" data-key="ALTRIGHT">
+            {" "}
+            {btn}{" "}
           </div>
         ))}
         {line6s3c.map((btn) => (
-          <div className="mac-button2 row6-mac" data-key="ARROWLEFT">
+          <div className="abutton2 roww6" data-key="ARROWLEFT">
             <ArrowLeftOutlined /> {btn}{" "}
           </div>
         ))}
         {line6s4a.map((btn) => (
-          <div className="mac-button2 row6-mac" data-key="ARROWUP">
-            
+          <div className="abutton2 roww6" data-key="ARROWUP">
+            {" "}
             <ArrowUpOutlined />
-            {btn}
+            {btn}{" "}
           </div>
         ))}
         {line6s4b.map((btn) => (
-          <div className="mac-button2 row6-mac" data-key="ARROWRIGHT">
+          <div className="abutton2 roww6" data-key="ARROWRIGHT">
             <ArrowRightOutlined />
-            {btn}
+            {btn}{" "}
           </div>
         ))}
       </div>
-      <div className="container7-mac">
+      <div className="containerr7">
         {line6s2.map((btn) => (
-          <div className="mac-button2 row7-mac" data-key="ARROWDOWN">
-            <ArrowDownOutlined /> {btn}
+          <div className="abutton2 roww7" data-key="ARROWDOWN">
+            <ArrowDownOutlined /> {btn}{" "}
           </div>
         ))}
       </div>
