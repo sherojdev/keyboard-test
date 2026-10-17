@@ -57,6 +57,45 @@
   color: #1d3557;
 }
 
+.faq-mac {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      55% 30% at 25% 88%,
+      rgba(148, 163, 184, 0.15),
+      transparent 90%
+    ),
+    radial-gradient(
+      60% 32% at 78% 78%,
+      rgba(100, 116, 139, 0.15),
+      transparent 90%
+    ),
+    radial-gradient(
+      45% 25% at 50% 60%,
+      rgba(203, 213, 225, 0.15),
+      transparent 90%
+    ),
+    linear-gradient(to bottom, #ffcdb2 0%, #f4978e 25%, #b5838d 50%, #e5989b 100%);
+}
+
+.ant-collapse-body {
+  color: #f3f7ff;
+  background: #990d35;
+  font-weight: 700;
+}
+
+.ant-collapse-header {
+  color: #000000;
+  font-weight: 700;
+}
+
+.ant-collapse-title{
+  color: #010204;
+}
+
+.container-faq{
+   color: #1d3557;
+}
 #display-box-mac {
   height: 130px;
   width: 70vw;

@@ -128,6 +128,7 @@ export default function Buttons() {
       let button1 = document.querySelectorAll<HTMLButtonElement>(".button1");
       window.addEventListener("keydown", (e) => {
         button1.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -143,6 +144,7 @@ export default function Buttons() {
       let button2 = document.querySelectorAll<HTMLButtonElement>(".button2");
       window.addEventListener("keydown", (e) => {
         button2.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -158,6 +160,7 @@ export default function Buttons() {
       let button3 = document.querySelectorAll<HTMLButtonElement>(".button3");
       window.addEventListener("keydown", (e) => {
         button3.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -173,6 +176,7 @@ export default function Buttons() {
       let button4 = document.querySelectorAll<HTMLButtonElement>(".button4");
       window.addEventListener("keydown", (e) => {
         button4.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -188,6 +192,7 @@ export default function Buttons() {
       let button5 = document.querySelectorAll<HTMLButtonElement>(".button5");
       window.addEventListener("keydown", (e) => {
         button5.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -203,6 +208,7 @@ export default function Buttons() {
       let button6 = document.querySelectorAll<HTMLButtonElement>(".button6");
       window.addEventListener("keydown", (e) => {
         button6.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -218,6 +224,7 @@ export default function Buttons() {
       let button7 = document.querySelectorAll<HTMLButtonElement>(".button7");
       window.addEventListener("keydown", (e) => {
         button7.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -233,6 +240,7 @@ export default function Buttons() {
       let button8 = document.querySelectorAll<HTMLButtonElement>(".button8");
       window.addEventListener("keydown", (e) => {
         button8.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -248,6 +256,7 @@ export default function Buttons() {
       let button9 = document.querySelectorAll<HTMLButtonElement>(".button9");
       window.addEventListener("keydown", (e) => {
         button9.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -263,6 +272,7 @@ export default function Buttons() {
       let button10 = document.querySelectorAll<HTMLButtonElement>(".button10");
       window.addEventListener("keydown", (e) => {
         button10.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -278,6 +288,7 @@ export default function Buttons() {
       let button11 = document.querySelectorAll<HTMLButtonElement>(".button11");
       window.addEventListener("keydown", (e) => {
         button11.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -293,6 +304,7 @@ export default function Buttons() {
       let button12 = document.querySelectorAll<HTMLButtonElement>(".button12");
       window.addEventListener("keydown", (e) => {
         button12.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style. background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
@@ -308,6 +320,7 @@ export default function Buttons() {
       let button13 = document.querySelectorAll<HTMLButtonElement>(".button13");
       window.addEventListener("keydown", (e) => {
         button13.forEach((btn) => {
+          e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
             btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
