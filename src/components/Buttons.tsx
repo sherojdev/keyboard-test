@@ -104,18 +104,19 @@ export default function Buttons() {
   const line6s4b = [""];
   const line6s5 = ["0"];
   const line6s6 = ["."];
+  
 
   useEffect(() => {
     const handlekeyPress = (): void => {
       let button = document.querySelectorAll<HTMLButtonElement>(".button");
-      let text = document.querySelector<HTMLDivElement>(".rtex");
+      let text = document.querySelector<HTMLDivElement>(".return-text");
       window.addEventListener("keydown", (e) => {
         button.forEach((btn) => {
           e.preventDefault();
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -128,9 +129,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button1.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -143,9 +144,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button2.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -158,9 +159,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button3.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -173,9 +174,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button4.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -188,9 +189,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button5.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -203,9 +204,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button6.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -218,9 +219,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button7.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -233,9 +234,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button8.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -248,9 +249,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button9.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -263,9 +264,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button10.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -278,9 +279,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button11.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -293,9 +294,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button12.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style. background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -308,9 +309,9 @@ export default function Buttons() {
       window.addEventListener("keydown", (e) => {
         button13.forEach((btn) => {
           if (e.code.toUpperCase() === btn.getAttribute("data-key")) {
-            btn.style.backgroundColor = "#f56200";
+            btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
             btn.style.color = "white";
-            btn.style.border = "2px solid #f78a40";
+            btn.style.border = "2px solid rgba(255, 255, 255, 0.4)"; 
             if (text) {
               text.style.visibility = "visible";
               text.innerText = e.code;
@@ -327,8 +328,8 @@ export default function Buttons() {
 
   return (
     <>
-      <div className="container" id="tex">
-        <div className="rtex"></div>
+      <div className="container mb-8 rounded-xl mx-32 " id="display-box">
+        <div className="return-text"></div>
       </div>
       <div className="container1">
         {line1a.map((btn) => (
