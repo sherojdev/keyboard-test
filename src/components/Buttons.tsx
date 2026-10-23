@@ -9,7 +9,7 @@ import {
 import { useNewStyle } from "../hooks/useStyle";
 
 export default function Buttons() {
-  const lever = [["esc"],["F1"],["F2"],["F3"],["F4"],["F5"],["F6"],["F7"],["F8"],["F9"],["F10"],["F11"],["F12"],["prt sc"],["delete"],["home"],["end"],["pgup"],["pgdn"],["`"],[1],[2],[3],[4],[5],[6],[7],[8],[9],[0],["-"],["="],["backspace"],["/"],["*"],["-"],["Num lock"],["tab"],["Q"],["W"],["E"],["R"],["T"],["Y"],["U"],["I"],["O"],["P"],["["],["]"],["\\"],["+"],["capslock"],["A"],["S"],["D"],["F"],["G"],["H"],["J"],["K"],["L"],[";"],["'"],["enter"],["shift"],["Z"],["X"],["C"],["V"],["B"],["N"],["M"],[","],["."],["/"],["Ctrl"],[""],["alt"],["."]];
+  const lever = [["esc","F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12","prt sc","delete","home","end","pgup","pgdn"],["`"],[1,2,3,4,5,6,7,8,9,0,"-","="],["backspace"],["Num lock","/","*","-"],["tab"],["Q","W","E","R","T","Y","U","I","O","P","[","]"],["\\"],[7,8,9],["+"],["capslock"],["A","S","D","F","G","H","J","K","L",";","'"],["enter"],[4,5,6],["shift"],["Z","X","C","V","B","N","M",",",".","/"],[1,2,3],["Ctrl"],[""],["alt"],[0],["."]];
 
   useNewStyle() ;
  
@@ -20,512 +20,172 @@ export default function Buttons() {
       </div>
       <div className="container1">     
         {lever[0].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="ESCAPE">
-            {btn}
-          </div>
-        ))}
-        {lever[1].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F1">
-            {btn}
-          </div>
-        ))}
-        {lever[2].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F2">
-            {btn}
-          </div>
-        ))}
-        {lever[3].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F3">
-            {btn}
-          </div>
-        ))}
-        {lever[4].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F4">
-            {btn}
-          </div>
-        ))}
-        {lever[5].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F5">
-            {btn}
-          </div>
-        ))}
-        {lever[6].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F6">
-            {btn}
-          </div>
-        ))}
-        {lever[7].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F7">
-            {btn}
-          </div>
-        ))}
-        {lever[8].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F8">
-            {btn}
-          </div>
-        ))}
-        {lever[9].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F9">
-            {btn}
-          </div>
-        ))}
-        {lever[10].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F10">
-            {btn}
-          </div>
-        ))}
-        {lever[11].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F11">
-            {btn}
-          </div>
-        ))}
-        {lever[12].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="F12">
-            {btn}
-          </div>
-        ))}
-        {lever[13].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="PRINTSCREEN">
-            {btn}
-          </div>
-        ))}
-        {lever[14].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="DELETE">
-            {btn}
-          </div>
-        ))}
-        {lever[15].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="HOME">
-            {btn}
-          </div>
-        ))}
-        {lever[16].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="END">
-            {btn}
-          </div>
-        ))}
-        {lever[17].map((btn) => (
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="PAGEUP">
-            {btn}
-          </div>
-        ))}
-        {lever[18].map((btn) => ( 
-          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key="PAGEDOWN">
+          <div className="button  h-[26px] w-[48px] rounded-md bg-[#dcbeee] text-white font-medium border border-solid border-[#47126b] border-b-3 border-b-[rgb(74, 45, 96)] " data-key={["Escape", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "PrintScreen", "Delete", "Home", "End", "PageUp", "PageDown"]}>
             {btn}
           </div>
         ))}
       </div>
       <div className="container2">
-        {lever[19].map((btn) => (
-          <div className="button  h-[48px] w-[35px] rounded-md text-base pt-3 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="BACKQUOTE">
+        {lever[1].map((btn) => (
+          <div className="button  h-[48px] w-[35px] rounded-md text-base pt-3 bg-[#c29ae1] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="Backquote">
             {btn}
           </div>
         ))}
-        {lever[20].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT1">
+        {lever[2].map((btn) => (
+          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Digit1", "Digit2", "Digit3", "Digit4", "Digit5", "Digit6", "Digit7", "Digit8", "Digit9", "Digit0", "Minus", "Equal"]}>
             {btn}
           </div>
         ))}
-        {lever[21].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT2">
+        {lever[3].map((btn) => (
+          <div className="button  h-[48px] w-[94px] rounded-md pt-2 text-sm bg-[#c29ae1] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Backspace"]}>
             {btn}
           </div>
         ))}
-        {lever[22].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT3">
-            {btn}
-          </div>
-        ))}
-        {lever[23].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT4">
-            {btn}
-          </div>
-        ))}
-        {lever[24].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT5">
-            {btn}
-          </div>
-        ))}
-        {lever[25].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT6">
-            {btn}
-          </div>
-        ))}
-        {lever[26].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT7">
-            {btn}
-          </div>
-        ))}
-        {lever[27].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT8">
-            {btn}
-          </div>
-        ))}
-        {lever[28].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT9">
-            {btn}
-          </div>
-        ))}
-        {lever[29].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="DIGIT0">
-            {btn}
-          </div>
-        ))}
-        {lever[30].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="MINUS">
-            {btn}
-          </div>
-        ))}
-        {lever[31].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="EQUAL">
-            {btn}
-          </div>
-        ))}
-        {lever[32].map((btn) => (
-          <div className="button  h-[48px] w-[94px] rounded-md pt-2 text-sm bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="BACKSPACE">
-            {btn}
-          </div>
-        ))}
-        {lever[33].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-xs pt-0 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMLOCK"> 
-            {btn}
-          </div>
-        ))}
-        {lever[34].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPADDIVIDE">
-            {btn}
-          </div>
-        ))}
-        {lever[35].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPADMULTIPLY">
-            {btn}
-          </div>
-        ))}
-        {lever[36].map((btn) => (
-          <div className="button  h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#c29ae1] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPADSUBTRACT">
+        {lever[4].map((btn) => (
+          <div className="button  h-[48px] w-[48px] rounded-md text-xs pt-0 bg-[#c29ae1]  font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["NumLock","NumpadDivide", "NumpadMultiply", "NumpadSubtract"]}> 
             {btn}
           </div>
         ))}
       </div>
       <div className="container3">
-        {lever[37].map((btn) => (
-          <div className="button row3 h-[48px] w-[64px] rounded-md text-base pt-1 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="TAB">
+        {lever[5].map((btn) => (
+          <div className="button row3 h-[48px] w-[64px] rounded-md text-base pt-1 bg-[#9d4edd] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Tab"]}>
             {btn}
           </div>
         ))}
-        {lever[38].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYQ">
+        {lever[6].map((btn) => (
+          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["KeyQ", "KeyW", "KeyE", "KeyR", "KeyT", "KeyY", "KeyU", "KeyI", "KeyO", "KeyP", "BracketLeft", "BracketRight"]}>
             {btn}
           </div>
         ))}
-        {lever[39].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYW">
+        {lever[7].map((btn) => (
+          <div className="button row3 h-[48px] w-[64px] rounded-md text-base pt-1 bg-[#9d4edd]  font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Backslash"]}>
             {btn}
           </div>
         ))}
-        {lever[40].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYE">
+        {lever[8].map((btn) => (
+          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Numpad7", "Numpad8", "Numpad9"]}>
             {btn}
           </div>
         ))}
-        {lever[41].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYR">
+        {lever[9].map((btn) => (
+          <div className="button row3 h-[108px] w-[48px] rounded-md text-base pt-9 bg-[#9d4edd] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Numpadadd"]}>
             {btn}
           </div>
         ))}
-        {lever[42].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYT">
-            {btn}
-          </div>
-        ))}
-        {lever[43].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYY">
-            {btn}
-          </div>
-        ))}
-        {lever[44].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYU">
-            {btn}
-          </div>
-        ))}
-        {lever[45].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYI">
-            {btn}
-          </div>
-        ))}
-        {lever[46].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYO">
-            {btn}
-          </div>
-        ))}
-        {lever[47].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYP">
-            {btn}
-          </div>
-        ))}
-        {lever[48].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="BRACKETLEFT">
-            {btn}
-          </div>
-        ))}
-        {lever[49].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="BRACKETRIGHT">
-            {btn}
-          </div>
-        ))}
-        {lever[50].map((btn) => (
-          <div className="button row3 h-[48px] w-[64px] rounded-md text-base pt-1 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="BACKSLASH">
-            {btn}
-          </div>
-        ))}
-        {lever[26].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD7">
-            {btn}
-          </div>
-        ))}
-        {lever[27].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD8">
-            {btn}
-          </div>
-        ))}
-        {lever[28].map((btn) => (
-          <div className="button row3 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD9">
-            {btn}
-          </div>
-        ))}
-        {lever[51].map((btn) => (
-          <div className="button row3 h-[108px] w-[48px] rounded-md text-base pt-9 bg-[#9d4edd] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPADADD">
-            {btn}
-          </div>
-        ))}
-      </div>
+        </div>
       <div className="container4">
-        {lever[52].map((btn) => (
-          <div className="button row4 h-[48px] w-[92px] rounded-md text-base pt-1 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="CAPSLOCK">
+        {lever[10].map((btn) => (
+          <div className="button row4 h-[48px] w-[92px] rounded-md text-base pt-1 bg-[#5a189a] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["capslock"]}>
            {btn}
           </div>
         ))}
-        {lever[53].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYA">
+        {lever[11].map((btn) => (
+          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["KeyA", "KeyS", "KeyD", "KeyF", "KeyG", "KeyH", "KeyJ", "KeyK", "KeyL", "Semicolon", "Quote"]}>
             {btn}
           </div>
         ))}
-        {lever[54].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYS">
+        {lever[12].map((btn) => (
+          <div className="button row4 h-[48px] w-[98px] rounded-md text-base pt-1 bg-[#5a189a] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Enter"]}>
             {btn}
           </div>
         ))}
-        {lever[55].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYD">
-            {btn}
-          </div>
-        ))}
-        {lever[56].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYF">
-            {btn}
-          </div>
-        ))}
-        {lever[57].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYG">
-            {btn}
-          </div>
-        ))}
-        {lever[58].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYH">
-            {btn}
-          </div>
-        ))}
-        {lever[59].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYJ">
-            {btn}
-          </div>
-        ))}
-        {lever[60].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYK">
-            {btn}
-          </div>
-        ))}
-        {lever[61].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYL">
-            {btn}
-          </div>
-        ))}
-        {lever[62].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="SEMICOLON">
-            {btn}
-          </div>
-        ))}
-        {lever[63].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="QUOTE">
-            {btn}
-          </div>
-        ))}
-        {lever[64].map((btn) => (
-          <div className="button row4 h-[48px] w-[98px] rounded-md text-base pt-1 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="ENTER">
-            {btn}
-          </div>
-        ))}
-        {lever[23].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD4">
-            {btn}
-          </div>
-        ))}
-        {lever[24].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD5">
-            {btn}
-          </div>
-        ))}
-        {lever[25].map((btn) => (
-          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD6">
+        {lever[13].map((btn) => (
+          <div className="button row4 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#5a189a] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Numpad4", "Numpad5", "Numpad6"]}>
             {btn}
           </div>
         ))}
       </div>
       <div className="container5">
-        {lever[65].map((btn) => (
-          <div className="button row5 h-[48px] w-[118px] rounded-md text-base pt-1 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="SHIFTLEFT">
+        {lever[14].map((btn) => (
+          <div className="button row5 h-[48px] w-[118px] rounded-md text-base pt-1 bg-[#3c096c] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Shiftleft"]}>
             {btn}
           </div>
         ))}
-        {lever[66].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYZ">
+        {lever[15].map((btn) => (
+          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["KeyZ", "KeyX", "KeyC", "KeyV", "KeyB", "KeyN", "KeyM", "Comma", "Period", "Slash"]}>
             {btn}
           </div>
         ))}
-        {lever[67].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYX">
+        {lever[14].map((btn) => (
+          <div className="button row5 h-[48px] w-[174px] rounded-md text-base pt-2 bg-[#3c096c] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Shiftright"]}>
             {btn}
           </div>
         ))}
-        {lever[68].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYC">
+        {lever[16].map((btn) => (
+          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Numpad1", "Numpad2", "Numpad3"]}>
             {btn}
           </div>
         ))}
-        {lever[69].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYV">
-            {btn}
-          </div>
-        ))}
-        {lever[70].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYB">
-            {btn}
-          </div>
-        ))}
-        {lever[71].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYN">
-            {btn}
-          </div>
-        ))}
-        {lever[72].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="KEYM">
-            {btn}
-          </div>
-        ))}
-        {lever[79].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="COMMA">
-            {btn}
-          </div>
-        ))}
-        {lever[73].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="PERIOD">
-            {btn}
-          </div>
-        ))}
-        {lever[74].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="SLASH">
-            {btn}
-          </div>
-        ))}
-        {lever[65].map((btn) => (
-          <div className="button row5 h-[48px] w-[174px] rounded-md text-base pt-2 bg-[#3c096c] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="SHIFTRIGHT">
-            {btn}
-          </div>
-        ))}
-        {lever[20].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD1">
-            {btn}
-          </div>
-        ))}
-        {lever[21].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD2">
-            {btn}
-          </div>
-        ))}
-        {lever[22].map((btn) => (
-          <div className="button row5 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD3">
-            {btn}
-          </div>
-        ))}
-        {lever[65].map((btn) => (
-          <div className="button row5 h-[108px] w-[48px] rounded-md text-xs pt-9 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPADENTER">
+        {lever[12].map((btn) => (
+          <div className="button row5 h-[108px] w-[48px] rounded-md text-xs pt-9 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Numpadenter"]}>
             {btn}
           </div>
         ))}
       </div>
       <div className="container6">
-        {lever[76].map((btn) => (
-          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="CONTROLLEFT">
+        {lever[17].map((btn) => (
+          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Controlleft"]}>
             {btn}
           </div>
         ))}
-        {lever[77].map((btn) => (
-          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="METALEFT">
+        {lever[18].map((btn) => (
+          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Metaleft"]}>
             <WindowsFilled />
             {btn}
           </div>
         ))}
-        {lever[78].map((btn) => (
-          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="ALTLEFT">
+        {lever[19].map((btn) => (
+          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Altleft"]}>
             {btn}
           </div>
         ))}
-        {lever[77].map((btn) => (
-          <div className="button row6 h-[48px] w-[444px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="SPACE">
+        {lever[18].map((btn) => (
+          <div className="button row6 h-[48px] w-[444px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Space"]}>
             {btn}
           </div>
         ))}
-        {lever[78].map((btn) => (
-          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="ALTRIGHT">
+        {lever[19].map((btn) => (
+          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Altright"]}>
             {btn}
           </div>
         ))}
-        {lever[76].map((btn) => (
-          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="CONTROLRIGHT">
+        {lever[17].map((btn) => (
+          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Controlright"]}>
             {btn}
           </div>
         ))}
-        {lever[77].map((btn) => (
-          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="ARROWLEFT">
+        {lever[18].map((btn) => (
+          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Arrowleft"]}>
             <ArrowLeftOutlined /> {btn}
           </div>
         ))}
-        {lever[77].map((btn) => (
-          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="ARROWUP">
+        {lever[18].map((btn) => (
+          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Arrowup"]}>
             <ArrowUpOutlined />
             {btn}
           </div>
         ))}
-        {lever[77].map((btn) => (
-          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="ARROWRIGHT">
+        {lever[18].map((btn) => (
+          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Arrowright"]}>
             <ArrowRightOutlined />
             {btn}
           </div>
         ))}
-        {lever[29].map((btn) => (
-          <div className="button row6 h-[48px] w-[120px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPAD0">
+        {lever[20].map((btn) => (
+          <div className="button row6 h-[48px] w-[120px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Numpad0"]}>
             {btn}
           </div>
         ))}
-        {lever[79].map((btn) => (
-          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key="NUMPADDECIMAL">
+        {lever[21].map((btn) => (
+          <div className="button row6 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#240046] font-medium text-white border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]" data-key={["Numpaddecimal"]}>
             {btn}
           </div>
         ))}
       </div>
       <div className="container7">
-        {lever[77].map((btn) => (
-          <div className="button row7 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#10002b] text-white border border-solid border-[#47126b] border-b-5 border-b-[rgb(74, 45, 96)]" data-key="ARROWDOWN">
+        {lever[18].map((btn) => (
+          <div className="button row7 h-[48px] w-[48px] rounded-md text-base pt-2 bg-[#10002b] font-medium text-white border border-solid border-[#47126b] border-b-5 border-b-[rgb(74, 45, 96)]" data-key={["Arrowdown"]}>
             <ArrowDownOutlined /> {btn}
           </div>
         ))}
