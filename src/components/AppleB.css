@@ -105,16 +105,13 @@
 }
 
 .mac-button {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
   border-radius: 8%;
   height: 26px;
   width: 52px;
 }
 
 .mac-button1 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  
   border-radius: 12%;
   font-size: 1rem;
   height: 48px;
@@ -122,8 +119,7 @@
 }
 
 .mac-button2 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  
   border-radius: 12%;
   height: 50px;
   width: 50px;
@@ -132,8 +128,7 @@
 }
 
 .mac-button3 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  
   border-radius: 6%;
   font-size: 0.8rem;
   height: 48px;
@@ -142,8 +137,7 @@
 }
 
 .mac-button4 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  
   border-radius: 6%;
   font-size: 1rem;
   height: 48px;
@@ -152,8 +146,7 @@
 }
 
 .mac-button5 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+
   border-radius: 3%;
   font-size: 1rem;
   height: 48px;
@@ -162,8 +155,7 @@
 }
 
 .mac-button6 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+
   border-radius: 3%;
   font-size: 1rem;
   height: 48px;
@@ -172,8 +164,7 @@
 }
 
 .mac-button7 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  
   border-radius: 6%;
   font-size: 1rem;
   height: 108px;
@@ -182,8 +173,7 @@
 }
 
 .mac-button8 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  
   border-radius: 3%;
   font-size: 1rem;
   height: 48px;
@@ -192,8 +182,7 @@
 }
 
 .mac-button9 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+
   border-radius: 3%;
   font-size: 1rem;
   height: 48px;
@@ -202,8 +191,7 @@
 }
 
 .mac-button10 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  
   border-radius: 2%;
   height: 48px;
   width: 384px;
@@ -211,8 +199,7 @@
 }
 
 .mac-button11 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  
   border-radius: 12%;
   font-size: 1rem;
   height: 24px;
@@ -221,8 +208,7 @@
 }
 
 .mac-button12 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+ 
   border-radius: 6%;
   font-size: 1rem;
   height: 48px;
@@ -231,8 +217,7 @@
 }
 
 .mac-button13 {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  
   border-radius: 12%;
   height: 48px;
   width: 48px;
@@ -323,60 +308,4 @@
   margin-bottom: 30px;
   border: 3px solid #d3ea07;
   visibility: hidden;
-}
-
-.row1-mac {
-  background-color: #ccff33;
-  font-weight: 600;
-  color: white;
-  border: 1px solid #183a20;
-  border-bottom: 4px solid #183a20;
-}
-
-.row2-mac {
-  background-color: #9ef01a;
-  font-weight: 500;
-  color: white;
-  border: 1px solid #183a20;
-  border-bottom: 4px solid #183a20;
-}
-
-.row3-mac {
-  background-color: #70e000;
-  color: white;
-  font-weight: 500;
-  border: 1px solid #183a20;
-  border-bottom: 4px solid #183a20;
-}
-
-.row4-mac {
-  background-color: #38b000;
-  color: white;
-  font-weight: 500;
-  border: 1px solid #183a20;
-  border-bottom: 4px solid #183a20;
-}
-
-.row5-mac {
-  background-color: #008000;
-  color: white;
-  font-weight: 500;
-  border: 1px solid #183a20;
-  border-bottom: 4px solid #183a20;
-}
-
-.row6-mac {
-  background-color: #007200;
-  color: white;
-  font-weight: 500;
-  border: 1px solid #183a20;
-  border-bottom: 4px solid #183a20;
-}
-
-.row7-mac {
-  background-color: #006400;
-  color: white;
-  font-weight: 500;
-  border: 1px solid #183a20;
-  border-bottom: 5px solid #183a20;
 }
