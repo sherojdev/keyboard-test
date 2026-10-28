@@ -17,6 +17,7 @@
   align-items: center;
   background: transparent !important;
 }
+
 .navbar .ant-menu-item-selected {
   display: flex;
   align-items: center;
@@ -43,7 +44,7 @@
   background: linear-gradient(to bottom, #0f172a, #334155);
   min-height: 580;
   padding: 14px 16px;
-  height: 37vw;
+  height: 39vw;
   width: 90vw;
 }
 
@@ -56,23 +57,17 @@
 .faq {
   min-height: 100vh;
   background:
-    radial-gradient(
-      55% 30% at 25% 88%,
+    radial-gradient(55% 30% at 25% 88%,
       rgba(148, 163, 184, 0.15),
-      transparent 90%
-    ),
-    radial-gradient(
-      60% 32% at 78% 78%,
+      transparent 90%),
+    radial-gradient(60% 32% at 78% 78%,
       rgba(100, 116, 139, 0.15),
-      transparent 90%
-    ),
-    radial-gradient(
-      45% 25% at 50% 60%,
+      transparent 90%),
+    radial-gradient(45% 25% at 50% 60%,
       rgba(203, 213, 225, 0.15),
-      transparent 90%
-    ),
+      transparent 90%),
     linear-gradient(to bottom, #1e293b 0%, #0f172a 50%, #000 100%);
-    color: #f3f7ff;
+  color: #f3f7ff;
 }
 
 .ant-collapse-body {
@@ -86,8 +81,8 @@
   font-weight: 700;
 }
 
-.ant-collapse-title{
-  color:#f0f6f6
+.ant-collapse-title {
+  color: #f0f6f6;
 }
 
 #display-box {
@@ -113,4 +108,3 @@
   border: 3px solid #253237;
   visibility: hidden;
 }
-
