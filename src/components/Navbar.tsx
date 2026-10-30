@@ -5,7 +5,7 @@ import { WindowsFilled, AppleFilled } from "@ant-design/icons";
 import type { CollapseProps } from "antd";
 import { Link, useLocation } from "react-router-dom";
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content, Footer} = Layout;
 
 const items = Array.from({ length: 1 }).map((_, index) => ({
   key: index + 1,
@@ -191,6 +191,7 @@ const Navbar: React.FC = () => {
         <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
+
   );
 };
 
