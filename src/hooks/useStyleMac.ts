@@ -10,10 +10,6 @@ export function useNewStyleMac() {
                    e.stopImmediatePropagation();
                    e.stopPropagation();
                    e.preventDefault();
-                    if (e.code==="") {
-                        text!.style.visibility = "visible";
-                        text!.innerText = "NumLock";
-                }
                 if(btn.getAttribute("data-key")?.toUpperCase() === e.code.toUpperCase()){ 
                         btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
                         btn.style.color = "white";
