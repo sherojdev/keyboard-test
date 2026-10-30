@@ -1,8 +1,8 @@
 import React from "react";
-import { Layout, Menu, Collapse  } from "antd";
+import { Layout, Menu, Collapse } from "antd";
 import Buttons from "./Buttons";
 import { WindowsFilled, AppleFilled } from "@ant-design/icons";
-import type { CollapseProps } from 'antd';
+import type { CollapseProps } from "antd";
 import { Link, useLocation } from "react-router-dom";
 
 const { Header, Content, Footer} = Layout;
@@ -83,72 +83,72 @@ const faq12 = `
  Yes, it is completely free.
 `;
 
-const faqitems: CollapseProps['items'] = [
+const faqitems: CollapseProps["items"] = [
   {
-    key: '1',
-    label: 'What is Keyboard-Test?',
+    key: "1",
+    label: "What is Keyboard-Test?",
     children: <p>{faq1}</p>,
   },
   {
-    key: '2',
-    label: 'How do I test my keyboard?',
+    key: "2",
+    label: "How do I test my keyboard?",
     children: <p>{faq2}</p>,
   },
   {
-    key: '3',
-    label: 'Do I need to install anything or sign up?',
+    key: "3",
+    label: "Do I need to install anything or sign up?",
     children: <p>{faq3}</p>,
   },
   {
-    key: '4',
-    label: 'Is my typing recorded or stored??',
+    key: "4",
+    label: "Is my typing recorded or stored??",
     children: <p>{faq4}</p>,
   },
   {
-    key: '5',
-    label: 'What should I do if a key doesn’t light up?',
+    key: "5",
+    label: "What should I do if a key doesn’t light up?",
     children: <p>{faq5}</p>,
   },
   {
-    key: '6',
-    label: 'Does it work for both Windows and Mac keyboards??',
+    key: "6",
+    label: "Does it work for both Windows and Mac keyboards??",
     children: <p>{faq6}</p>,
   },
   {
-    key: '7',
-    label: 'Can I test laptop keyboards, mechanical keyboards and external keyboards?',
+    key: "7",
+    label:
+      "Can I test laptop keyboards, mechanical keyboards and external keyboards?",
     children: <p>{faq7}</p>,
   },
   {
-    key: '8',
-    label: 'Why does a key not show up, such as Fn, Print Screen or the Windows key?',
+    key: "8",
+    label:
+      "Why does a key not show up, such as Fn, Print Screen or the Windows key?",
     children: <p>{faq8}</p>,
   },
   {
-    key: '9',
-    label: 'What is ghosting, and can this tool detect it?',
+    key: "9",
+    label: "What is ghosting, and can this tool detect it?",
     children: <p>{faq9}</p>,
   },
   {
-    key: '10',
-    label: 'Does it work on mobile or tablets?',
+    key: "10",
+    label: "Does it work on mobile or tablets?",
     children: <p>{faq10}</p>,
   },
   {
-    key: '11',
-    label: 'Which browsers are supported?',
+    key: "11",
+    label: "Which browsers are supported?",
     children: <p>{faq11}</p>,
   },
   {
-    key: '12',
-    label: 'Is it free?',
+    key: "12",
+    label: "Is it free?",
     children: <p>{faq12}</p>,
-  }
+  },
 ];
 
-
 const Navbar: React.FC = () => {
-
   const onChange = (key: string | string[]) => {
     console.log(key);
   };
@@ -167,20 +167,28 @@ const Navbar: React.FC = () => {
           theme="dark"
           mode="horizontal"
           selectedKeys={[pathname === "/" ? "1" : "2"]}
-          items={[...items ,...items1]}
+          items={[...items, ...items1]}
         />
       </Header>
-      
-      <Content className="workspace pt-6 pl-9">    
+
+      <Content className="workspace pt-6 pl-9">
         <div className="rounded-xl inner-workspace mt-6 ml-5">
           <Buttons />
         </div>
       </Content>
-    
+
       <Footer className="base">
-        <div className="container flex items-start text-4xl font-bold mb-4"><p>Frequently Asked Questions</p></div>
-        <Collapse className="faq rounded-md" items={faqitems} defaultActiveKey={['1']} onChange={onChange} />
-        Keyboard-Test ©{currentYear} Crafted by <b>Rohit</b> with &#x2764;
+        <div className="container flex items-start text-4xl font-bold mb-4">
+          <p>Frequently Asked Questions</p>
+        </div>
+        <Collapse
+          className="faq rounded-md"
+          items={faqitems}
+          defaultActiveKey={["1"]}
+          onChange={onChange}
+        />
+        Keyboard-Test ©{currentYear} Presented by <b>SherojDev</b> crafted by{" "}
+        <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
 
@@ -188,4 +196,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-
