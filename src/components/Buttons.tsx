@@ -18,9 +18,9 @@ export default function Buttons() {
 
   return (
     <>
-      <div className="container-animation mb-4 flex flex-row flex-wrap rounded-xl mx-32 pt-2 md:shrink-0 overflow-hidden" id="display-box">
+      <div className="container-animation mb-4 lg:h-[130px] lg:w-[70vw] md:h-[97.5px] md:w-[53vw] sm:h-[82px] sm:w-[7vw] flex flex-row flex-wrap rounded-xl mx-32 pt-2 md:shrink-1 sm:shrink-2 overflow-hidden text-black bg-[#e6ebe4]" id="display-box">
       </div>
-      <div className="container h-[400px] w-full flex flex-row flex-wrap gap-x-1 md:shrink-0 sm:shrink:1">
+      <div className="container xl:h-[500px] xl:w-full lg:h-[400px] lg:w-full md:h-[300px] md-w-[75vw] flex flex-row flex-wrap gap-x-1 md:shrink-1 sm:shrink:2">
         {lever.map((btn, i) => (
           <div className={`button ${variety[i].height} ${variety[i].width} md:shrink-0 sm:shrink:1 rounded-md ${variety[i].background} ${variety[i].position} ${variety[i].bottom} ${variety[i].right} ${variety[i].fontSize} ${variety[i].paddingTop} text-white m-2 content-start font-medium border border-solid border-[#47126b] border-b-4 border-b-[rgb(74, 45, 96)]`} data-key={codes[i]} key={keys[i]}>
             {btn}

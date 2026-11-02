@@ -4,6 +4,7 @@ export function useNewStyle() {
 
     useEffect(() => {
         let button = document.querySelectorAll<HTMLButtonElement>(".button");
+        let test = document.querySelector<HTMLButtonElement>(".test");
         let animation = document.querySelector<HTMLDivElement>(".container-animation");
         const onChange = (e: KeyboardEvent) => {
             button.forEach((btn) => {
@@ -16,6 +17,12 @@ export function useNewStyle() {
                         document.getElementById("return-text")!.remove();
                          }, 2000);
                         }        
+                        if(test)  {
+                      btn.style.background = "";
+                      btn.style.color = "";
+                      btn.style.border = "";
+                      document.getElementById("return-text")!.remove();
+                }
                 if (btn.getAttribute("data-key")?.toUpperCase() === e.code.toUpperCase()) {
                     btn.style.background = "linear-gradient(145deg, #F472B6, #FB923C)";
                     btn.style.color = "white";

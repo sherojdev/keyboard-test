@@ -1,11 +1,36 @@
 import React from "react";
-import { Layout, Menu, Collapse } from "antd";
+import { Layout, Menu, Collapse, ConfigProvider, Button} from "antd";
 import Buttons from "./Buttons";
-import { WindowsFilled, AppleFilled } from "@ant-design/icons";
-import type { CollapseProps } from "antd";
+import { WindowsFilled, AppleFilled} from "@ant-design/icons";
+import type { CollapseProps} from "antd";
+import { createStyles } from 'antd-style';
 import { Link, useLocation } from "react-router-dom";
 
 const { Header, Content, Footer } = Layout;
+
+const useStyle = createStyles(({ cssVar, prefixCls, css }) => ({
+  linearGradientButton: css`
+    &.${prefixCls}-btn-primary:not([disabled]):not(.${prefixCls}-btn-dangerous) {
+      > span {
+        position: relative;
+      }
+
+      &::before {
+        content: '';
+        background: linear-gradient(135deg, #dcbeee, #c29ae1);
+        position: absolute;
+        inset: -1px;
+        opacity: 1;
+        transition: all ${cssVar.motionDurationSlow};
+        border-radius: inherit;
+      }
+
+      &:hover::before {
+        opacity: 0;
+      }
+    }
+  `,
+}));
 
 const items = Array.from({ length: 1 }).map((_, index) => ({
   key: index + 1,
@@ -149,6 +174,8 @@ const faqitems: CollapseProps["items"] = [
 ];
 
 const Navbar: React.FC = () => {
+  const { styles } = useStyle();
+
   const onChange = (key: string | string[]) => {
     console.log(key);
   };
@@ -172,8 +199,13 @@ const Navbar: React.FC = () => {
       </Header>
 
       <Content className="workspace pt-6 pl-9">
-        <div className="rounded-xl inner-workspace mt-6 ml-5">
-          <Buttons />
+        <div className="rounded-xl inner-workspace mt-6 ml-5"> 
+        <ConfigProvider button={{ className: styles.linearGradientButton,}} >
+        <Button type="primary" size="large" className="test font-bold">
+          Re-Test
+        </Button> 
+        </ConfigProvider>
+        <Buttons />
         </div>
       </Content>
 
