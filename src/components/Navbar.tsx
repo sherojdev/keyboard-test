@@ -5,7 +5,7 @@ import { WindowsFilled, AppleFilled } from "@ant-design/icons";
 import type { CollapseProps } from "antd";
 import { Link, useLocation } from "react-router-dom";
 
-const { Header, Content, Footer} = Layout;
+const { Header, Content, Footer } = Layout;
 
 const items = Array.from({ length: 1 }).map((_, index) => ({
   key: index + 1,
@@ -187,13 +187,10 @@ const Navbar: React.FC = () => {
           defaultActiveKey={["1"]}
           onChange={onChange}
         />
-        Keyboard-Test ©{currentYear} Presented by <b>SherojDev</b> crafted by{" "}
-        <b>Rohit</b> with &#x2764;
+        Keyboard-Test ©{currentYear} Presented and crafted by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
-
   );
 };
 
 export default Navbar;
-
