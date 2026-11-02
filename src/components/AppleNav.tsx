@@ -178,7 +178,7 @@ const Navbar: React.FC = () => {
       <Footer className="base-mac">
         <div className="container-faq flex items-start text-4xl font-bold mb-4"><p>Frequently Asked Questions</p></div>
         <Collapse className="faq-mac rounded-md" items={faqitems} defaultActiveKey={['1']} onChange={onChange} />
-        Keyboard-Test ©{currentYear} Presented by <b>SherojDev</b> crafted by <b>Rohit</b> with &#x2764;
+        Keyboard-Test ©{currentYear} Presented and crafted by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
   );

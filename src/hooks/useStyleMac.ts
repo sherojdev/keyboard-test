@@ -3,8 +3,8 @@ import { useEffect } from "react";
 export function useNewStyleMac() {
     
     useEffect(() => {
-        let mbutton = document.querySelectorAll<HTMLButtonElement>(".mac-button");
-        let text = document.querySelector<HTMLDivElement>(".return-text");
+        let mbutton = document.querySelectorAll<HTMLButtonElement>(".button");
+        let animation = document.querySelector<HTMLDivElement>(".container-animation");
         const onChange = (e: KeyboardEvent) =>  {
                 mbutton.forEach((btn) => {
                    e.stopImmediatePropagation();
@@ -14,10 +14,12 @@ export function useNewStyleMac() {
                         btn.style.background = "linear-gradient(120deg, #06B6D4, #7C3AED)";
                         btn.style.color = "white";
                         btn.style.border = "2px solid #0b0860";
-                         if (text && e.code!=="") {
-                        text.style.visibility = "visible";
-                        text.innerText = e.code;
-                    }
+                         if (animation && e.code!=="") {
+                             animation.innerHTML += `<div id="return-text-mac" class="m-2 rounded-xl h-[30px] w-[10vw] bg-[#ff0000] text-black  text-base border border-solid border-[#d3ea07] border-[3px]">${e.code}</div>`
+                        }
+                        setTimeout(() => {
+                         document.getElementById("return-text-mac")!.remove();
+                         }, 2000);
                 }
                 })}
                 

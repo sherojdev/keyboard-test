@@ -187,8 +187,7 @@ const Navbar: React.FC = () => {
           defaultActiveKey={["1"]}
           onChange={onChange}
         />
-        Keyboard-Test ©{currentYear} Presented by <b>SherojDev</b> crafted by{" "}
-        <b>Rohit</b> with &#x2764;
+        Keyboard-Test ©{currentYear} Presented and crafted by <b>Rohit</b> with &#x2764;
       </Footer>
     </Layout>
   );

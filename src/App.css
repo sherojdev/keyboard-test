@@ -85,6 +85,10 @@
   color: #f0f6f6;
 }
 
+.ant-collapse-expand-icon{
+  color: white;
+}
+
 #display-box {
   height: 130px;
   width: 70vw;
@@ -93,18 +97,6 @@
   font-size: 1rem;
 }
 
-.return-text {
-  height: 30px;
-  width: 10vw;
-  position: relative;
-  top: 50px;
-  left: 60px;
+#return-text {
   font-family: "Franklin Gothic Medium", "Arial Narrow", "Arial", "sans-serif";
-  border-radius: 3%;
-  background-color: #3dda09;
-  color: black;
-  font-size: 1rem;
-  margin-bottom: 30px;
-  border: 3px solid #253237;
-  visibility: hidden;
 }
