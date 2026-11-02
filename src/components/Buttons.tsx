@@ -15,6 +15,8 @@ export default function Buttons() {
   
   useNewStyle();
 
+  useNewStyle() ;
+ 
   return (
     <>
       <div className="container mb-4 rounded-xl mx-32" id="display-box">
