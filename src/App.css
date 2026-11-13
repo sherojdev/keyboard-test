@@ -6,8 +6,6 @@
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
   background-color: transparent;
   color: #f0f6f6;
 }
@@ -42,32 +40,27 @@
 
 .inner-workspace {
   background: linear-gradient(to bottom, #0f172a, #334155);
-  min-height: 580;
   padding: 14px 16px;
-  height: 39vw;
-  width: 90vw;
 }
 
 .base {
-  text-align: center;
   background: transparent;
   color: white;
 }
 
-.faq {
-  min-height: 100vh;
-  background:
-    radial-gradient(55% 30% at 25% 88%,
-      rgba(148, 163, 184, 0.15),
-      transparent 90%),
-    radial-gradient(60% 32% at 78% 78%,
-      rgba(100, 116, 139, 0.15),
-      transparent 90%),
-    radial-gradient(45% 25% at 50% 60%,
-      rgba(203, 213, 225, 0.15),
-      transparent 90%),
-    linear-gradient(to bottom, #1e293b 0%, #0f172a 50%, #000 100%);
-  color: #f3f7ff;
+.ant-layout-header{
+  padding: 10px;
+  height: 90px;
+}
+
+.ant-layout-footer{
+  margin: 15px;
+  padding: 15px;
+  align-self: center;
+}
+
+.ant-collapse{
+  border: none;
 }
 
 .ant-collapse-body {
@@ -85,8 +78,16 @@
   color: #f0f6f6;
 }
 
+:where(.css-dev-only-do-not-override-1y106cm).ant-collapse>.ant-collapse-item {
+    border-bottom: none;
+}
+
 .ant-collapse-expand-icon{
   color: white;
+}
+
+.ant-menu-overflow{
+  padding-bottom: 4px;
 }
 
 #display-box {

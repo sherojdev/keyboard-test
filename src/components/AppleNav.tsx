@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, Collapse } from "antd";
+import { Layout, Menu, Collapse} from "antd";
 import AppleB from "./AppleB";
 import { WindowsFilled, AppleFilled } from "@ant-design/icons";
 import type { CollapseProps } from 'antd';
@@ -34,19 +34,14 @@ const faq2 = `
 `;
 
 const faq3 = `
-
 No. It runs in your browser, with no download, no account and no sign-up.
 `;
 
 const faq4 = `
-
-
-
 No. Key presses are only detected in your browser to light up the keys. Nothing is sent to a server or saved.
 `;
 
 const faq5 = `
-
 Press it a few more times, then clean around the key with compressed air. Check for dust or debris, and try the keyboard on another computer. If it still fails, the switch may be faulty or the key may need replacing.
 `;
 
@@ -55,19 +50,14 @@ Yes. Use the Windows layout on the home page and the Apple layout from the Apple
 `;
 
 const faq7 = `
-  Yes. Any keyboard that your browser can read will work, whether it is wired, wireless, mechanical or built into a laptop.
+Yes. Any keyboard that your browser can read will work, whether it is wired, wireless, mechanical or built into a laptop.
 `;
 
 const faq8 = `
-
-
-
 Some keys are handled by the operating system or by keyboard firmware before the browser sees them. Fn usually never reaches the browser, and shortcuts like Win or Print Screen may be intercepted by the OS.
 `;
 
 const faq9 = `
-
-
 Ghosting is when a keyboard fails to register some keys pressed at the same time. Hold several keys together, for example W + A + Space, and see whether all of them light up. If one doesn’t, your keyboard may have limited key rollover.
 `;
 
@@ -148,7 +138,6 @@ const faqitems: CollapseProps['items'] = [
 
 
 const Navbar: React.FC = () => {
-
   const onChange = (key: string | string[]) => {
     console.log(key);
   };
@@ -170,8 +159,8 @@ const Navbar: React.FC = () => {
           items={[...items, ...items1]}
         />
       </Header>
-      <Content className="workspace-mac pt-6 pl-9">
-        <div className="rounded-xl inner-workspace-mac mt-6 ml-5"   >
+      <Content className="workspace-mac pt-6 pl-9 flex flex-wrap">
+        <div className="rounded-xl inner-workspace-mac mt-6 ml-5 flex flex-wrap flex-row"   >
           <AppleB />
         </div>
       </Content>

@@ -5,22 +5,19 @@ export function Retest() {
     useEffect(() => {
         let button = document.querySelectorAll<HTMLButtonElement>(".button");
         let test = document.querySelector<HTMLButtonElement>(".test");
-        const onClear = (e: KeyboardEvent) => {
-            button.forEach((btn) => {
-                e.stopImmediatePropagation();
-                e.stopPropagation();
-                e.preventDefault();   
-                if(test)  {
-                      btn.style.background = "";
-                      btn.style.color = "";
-                      btn.style.border = "";
-                      document.getElementById("return-text")!.remove();
-                }
-            })
+        const onClear = (e: MouseEvent) => {
+            
+            button.forEach((btn) => { 
+                 btn.style.background = "";
+                 btn.style.color = "";
+                 btn.style.border = "";    
+                 setTimeout(() => {
+                         document.getElementById("return-text")!.remove();
+                         }, 100);     
+        })
         }
 
-
-        test!.addEventListener("keydown", onClear);
-        return () => test!.removeEventListener("keydown", onClear);
+        test!.addEventListener("click", onClear);
+        return () => test!.removeEventListener("click", onClear);
     }, [])
 }
