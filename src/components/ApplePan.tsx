@@ -147,18 +147,18 @@ const Navbar: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Layout className="design-mac">
-      <Header className="navbar-mac" >
-        <div className="demo-logo" />
-        <h1 className="project-mac">Keyboard-Test</h1>
-        <Menu
-          className="navbar-menu-mac"
-          theme="dark"
-          mode="horizontal"
-          selectedKeys={[pathname === "/AppleB" ? "2" : "1"]}
-          items={[...items, ...items1]}
-        />
-      </Header>
+    <Layout className="design-mac 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:justify-evenly xl:flex xl:flex-col xl:justify-center xl:justify-evenly lg:flex lg:flex-col lg:justify-center lg:justify-evenly md:flex md:flex-col md:justify-center md:justify-evenly sm:flex sm:flex-col sm:justify-center sm:justify-evenly flex flex-col justify-center justify-evenly 2xl:h-full 2xl:w-full xl:h-full xl:w-full lg:h-full lg:w-full md:h-full md:w-full sm:h-full sm:w-full h-full w-full">
+       <Header className="navbar-mac 2xl:flex 2xl:items-center xl:flex xl:items-center lg:flex lg:items-center md:flex md:items-center sm:flex sm:items-center flex items-center">
+             <p className="2xl:text-[52px] xl:text-[48px] lg:text-[44px] md:text-[38px] sm:text-[32px] text-[18px] 2xl:m-4 xl:m-4 lg:m-3 md:m-2 sm:m-1 m-1 2xl:p-3 xl:p-3 lg:p-2 md:p-2 sm:p-1 p-1 2xl:text-[#ff5400] xl:text-[#ff5400] lg:text-[#ff5400] md:text-[#ff5400] sm:text-[#ff5400] text-[#ff5400] font-bold 2xl:subpixel-antialiased xl:subpixel-antialiased lg:subpixel-antialiased md:subpixel-antialiased sm:subpixel-antialiased antialiased 2xl:font-[gothic-open-shaded] xl:font-[gothic-open-shaded] lg:font-[gothic-open-shaded] md:font-[gothic-open-shaded] sm:font-[gothic-open-shaded] font-[gothic-open-shaded] 2xl:items-baseline 2xl:cursor-default xl:cursor-default lg:cursor-default md:cursor-default sm:cursor-default cursor-default">Keyboard-Test</p>
+             <div className="demo-logo" />
+             <Menu
+               className="navbar-menu-mac"
+               theme="dark"
+               mode="horizontal"
+               selectedKeys={[pathname === "/" ? "1" : "2"]}
+               items={[...items, ...items1]}
+             />
+           </Header>
       <Content className="workspace-mac pt-6 pl-9 flex flex-wrap">
         <div className="rounded-xl inner-workspace-mac mt-6 ml-5 flex flex-wrap flex-row"   >
           <AppleB />

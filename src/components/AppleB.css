@@ -67,20 +67,20 @@
 }
 
 .ant-collapse-body {
-  color: #f3f7ff;
-  background: rgb(130, 79, 153);
+  color: #131720;
+  background: rgb(34, 149, 221);
   font-weight: 700;
   text-align: left;
 }
 
 .ant-collapse-header {
-  color: #ffffff;
+  color: #130f0f;
   font-weight: 700;
   text-align: left;
 }
 
 .ant-collapse-title{
-  color: #e8effe;
+  color: #131315;
 }
 
 :where(.css-dev-only-do-not-override-1y106cm).ant-collapse>.ant-collapse-item {

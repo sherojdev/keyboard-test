@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Menu, Collapse} from "antd";
-import Buttons from "./Buttons";
+import Buttons from "./WindowsB";
 import { WindowsFilled, AppleFilled} from "@ant-design/icons";
 import type { CollapseProps} from "antd";
 import { Link, useLocation } from "react-router-dom";
@@ -150,7 +150,7 @@ const Navbar: React.FC = () => {
   return (
     <Layout className="design 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:justify-evenly xl:flex xl:flex-col xl:justify-center xl:justify-evenly lg:flex lg:flex-col lg:justify-center lg:justify-evenly md:flex md:flex-col md:justify-center md:justify-evenly sm:flex sm:flex-col sm:justify-center sm:justify-evenly flex flex-col justify-center justify-evenly 2xl:h-full 2xl:w-full xl:h-full xl:w-full lg:h-full lg:w-full md:h-full md:w-full sm:h-full sm:w-full h-full w-full">
       <Header className="navbar 2xl:flex 2xl:items-center xl:flex xl:items-center lg:flex lg:items-center md:flex md:items-center sm:flex sm:items-center flex items-center">
-        <p className="2xl:text-[52px] xl:text-[48px] lg:text-[44px] md:text-[38px] sm:text-[32px] text-[18px] 2xl:m-4 xl:m-4 lg:m-3 md:m-2 sm:m-1 m-1 2xl:p-3 xl:p-3 lg:p-2 md:p-2 sm:p-1 p-1 2xl:text-white-600 xl:text-white-600 lg:text-white-600 md:text-white-600 sm:text-white-600 text-white-600 font-semibold 2xl:subpixel-antialiased xl:subpixel-antialiased lg:subpixel-antialiased md:subpixel-antialiased sm:subpixel-antialiased antialiased 2xl:font-[gothic-open-shaded] xl:font-[gothic-open-shaded] lg:font-[gothic-open-shaded] md:font-[gothic-open-shaded] sm:font-[gothic-open-shaded] font-[gothic-open-shaded] 2xl:items-baseline">Keyboard-Test</p>
+        <p className="2xl:text-[52px] xl:text-[48px] lg:text-[44px] md:text-[38px] sm:text-[32px] text-[18px] 2xl:m-4 xl:m-4 lg:m-3 md:m-2 sm:m-1 m-1 2xl:p-3 xl:p-3 lg:p-2 md:p-2 sm:p-1 p-1 2xl:text-[#ff5400] xl:text-[#ff5400] lg:text-[#ff5400] md:text-[#ff5400] sm:text-[#ff5400] text-[#ff5400] font-bold 2xl:subpixel-antialiased xl:subpixel-antialiased lg:subpixel-antialiased md:subpixel-antialiased sm:subpixel-antialiased antialiased 2xl:font-[gothic-open-shaded] xl:font-[gothic-open-shaded] lg:font-[gothic-open-shaded] md:font-[gothic-open-shaded] sm:font-[gothic-open-shaded] font-[gothic-open-shaded] 2xl:items-baseline 2xl:cursor-default xl:cursor-default lg:cursor-default md:cursor-default sm:cursor-default cursor-default">Keyboard-Test</p>
         <div className="demo-logo" />
         <Menu
           className="navbar-menu"
@@ -162,25 +162,25 @@ const Navbar: React.FC = () => {
       </Header>
 
       <Content className="workspace 2xl:flex 2xl:flex-wrap 2xl:p-2 2xl:m-2 2xl:justify-center 2xl:content-center xl:flex xl:flex-wrap xl:p-2 xl:m-6 xl:justify-center xl:content-center lg:flex lg:flex-wrap lg:p-2 lg:m-6 lg:justify-center lg:content-center md:flex md:flex-wrap md:p-2 md:m-6 md:justify-center md:content-center sm:flex sm:flex-wrap sm:p-2 2xl:m-6 sm:justify-center sm:content-center flex flex-wrap p-2 m-0 justify-center content-center">
-        <div className="rounded-xl inner-workspace h-[400px] w-[360px] 2xl:h-[600px] 2xl:w-[1380px] xl:h-[520px] xl:w-[1140px] lg:h-[400px] lg:w-[838px] md:h-[330px] md:w-[578px] sm:h-[220px] sm:w-[450px] 2xl:flex 2xl:flex-wrap 2xl:flex-row xl:flex xl:flex-wrap xl:flex-row lg:flex lg:flex-wrap lg:flex-row md:flex md:flex-wrap md:flex-row sm:flex sm:flex-wrap sm:flex-row flex flex-wrap flex-row"> 
+        <div className="rounded-xl inner-workspace h-[300px] w-[360px] 2xl:h-[600px] 2xl:w-[1380px] xl:h-[520px] xl:w-[1140px] lg:h-[400px] lg:w-[838px] md:h-[330px] md:w-[568px] sm:h-[220px] sm:w-[450px] 2xl:flex 2xl:flex-wrap 2xl:flex-row xl:flex xl:flex-wrap xl:flex-row lg:flex lg:flex-wrap lg:flex-row md:flex md:flex-wrap md:flex-row sm:flex sm:flex-wrap sm:flex-row flex flex-wrap flex-row"> 
            <Buttons />
         </div>
       </Content>
       
-      <div className="2xl:flex 2xl:flex-wrap 2xl:justify-center xl:flex xl:flex-wrap xl:justify-center lg:flex lg:flex-wrap lg:justify-center md:flex md:flex-wrap md:justify-center sm:flex sm:flex-wrap sm:justify-center flex flex-wrap justify-center 2xl:h-[1000px] 2xl:w-full 2xl:pr-0 xl:h-[800px] xl:w-full lg:h-[600px] lg:w-full md:h-[510px] md:w-full sm:h-[360px] sm:w-full h-[1100px] w-full 2xl:p-2 xl:p-1 lg:p-2 md:p-1 sm:p-2 p-1 2xl:m-1 xl:m-1 lg:m-1 md:p-1 sm:m-1 m-1">
-      <Footer className="base 2xl:flex 2xl:flex-wrap 2xl:justify-center xl:content-center xl:flex xl:flex-wrap xl:justify-center xl:content-center lg:flex lg:flex-wrap lg:justify-center lg:content-center md:flex md:flex-wrap md:justify-center md:content-center sm:flex sm:flex-wrap sm:justify-center sm:content-center flex flex-wrap justify-center content-center 2xl:h-[1000px] 2xl:w-[1500px] 2xl:pr-0 xl:h-[800px] xl:w-[1400px] lg:h-[600px] lg:w-[1110px] md:h-[510px] md:w-[950px] sm:h-[360px] sm:w-[750px] h-[1100px] w-[450px] 2xl:m-4">
-        <div className="flex 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full w-full 2xl:m-4 xl:m-4 lg:m-4 md:m-4 sm:m-4 m-4 2xl:p-1 xl:p-1 lg:p-1 md:p-1 sm:p-1 p-1 flex-row font-bold 2xl:flex 2xl:flex-row 2xl:font-bold xl:flex xl:flex-row xl:font-bold lg:flex lg:flex-row lg:font-bold md:flex md:flex-row md:flex-bold sm:flex sm:flex-row sm:flex-bold flex flex-row flex-bold">
-          <p className=" 2xl:text-[46px] xl:text-[38px] lg:text-[26px] md:text-[16px] sm:text-[12px] text-[10px]">Frequently Asked Questions</p>
+      <div className="2xl:flex 2xl:flex-wrap 2xl:justify-center xl:flex xl:flex-wrap xl:justify-center lg:flex lg:flex-wrap lg:justify-center md:flex md:flex-wrap md:justify-center sm:flex sm:flex-wrap sm:justify-center flex flex-wrap flex-col justify-start 2xl:h-[1000px] 2xl:w-full 2xl:pr-0 xl:h-[900px] xl:w-full lg:h-[800px] lg:w-full md:h-[680px] md:w-full sm:h-[360px] sm:w-full h-[500px] w-full 2xl:p-2 xl:p-1 lg:p-2 md:p-0 sm:p-2 p-0 2xl:m-1 xl:m-1 lg:m-1 md:p-1 sm:m-1 m-1">
+      <Footer className="base 2xl:flex 2xl:flex-wrap 2xl:justify-center xl:content-center xl:flex xl:flex-wrap xl:justify-center xl:content-center lg:flex lg:flex-wrap lg:justify-center lg:content-center md:flex md:flex-wrap md:justify-center md:content-center sm:flex sm:flex-wrap sm:justify-center sm:content-center flex flex-wrap justify-center content-center 2xl:h-[800px] 2xl:w-[1500px] 2xl:pr-0 xl:h-[800px] xl:w-[1200px] lg:h-[700px] lg:w-[880px] md:h-[660px] md:w-[600px] sm:h-[360px] sm:w-[500px] h-[500px] w-[340px] 2xl:m-4 xl:m-4 lg:m-4 md:m-4 sm:m-4 m-4">
+        <div className="flex 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full w-full 2xl:m-4 xl:m-3 lg:m-3 md:m-2 sm:m-2 m-1 2xl:p-1 xl:p-1 lg:p-1 md:p-1 sm:p-1 p-1 flex-row font-bold 2xl:flex 2xl:flex-row 2xl:font-bold xl:flex xl:flex-row xl:font-bold lg:flex lg:flex-row lg:font-bold md:flex md:flex-row md:flex-bold sm:flex sm:flex-row sm:flex-bold flex flex-row flex-bold">
+          <p className=" 2xl:text-[46px] xl:text-[38px] lg:text-[36px] md:text-[26px] sm:text-[20px] text-[18px] 2xl:text-[#0f0f0f] xl:text-[#0f0f0f] lg:text-[#0f0f0f] md:text-[#0f0f0f] sm:text-[#0f0f0f] text-[#0f0f0f] 2xl:subpixel-antialiased xl:subpixel-antialiased lg:subpixel-antialiased md:subpixel-antialiased sm:subpixel-antialiased antialiased 2xl:cursor-default xl:cursor-default lg:cursor-default md:cursor-default cursor-default 2xl:pl-4 xl:p-0 lg:p-0">Frequently Asked Questions</p>
         </div>
         <Collapse
-          className="faq rounded-md 2xl:h-[900px] 2xl:w-[1420px] h-[300px] w-[430px] sm:h-[360px] sm:w-[640px] sm:overflow-auto sm:scroll-smooth sm:scrollbar-thumb-transparent md:h-[480px] md:w-[800px] md:overflow-auto md:scroll-smooth md:scrollbar-thumb-transparent lg:h-[580px] lg:w-[1100px] lg:overflow-auto lg:scroll-smooth lg:scrollbar-thumb-transparent xl:h-[700px] xl:w-[1380px] xl:overflow-auto xl:scroll-smooth xl:scrollbar-thumb-transparent overflow-auto scroll-smooth scrollbar-thumb-transparent"
+          className="faq rounded-md 2xl:h-[700px] 2xl:w-[1400px] h-[340px] w-[360px] sm:h-[360px] sm:w-[490px] sm:overflow-auto sm:scroll-smooth sm:scrollbar-thumb-transparent md:h-[480px] md:w-[650px] md:overflow-auto md:scroll-smooth md:scrollbar-thumb-transparent lg:h-[600px] lg:w-[1000px] lg:overflow-auto lg:scroll-smooth lg:scrollbar-thumb-transparent xl:h-[700px] xl:w-[1190px] xl:overflow-auto xl:scroll-smooth xl:scrollbar-thumb-transparent overflow-auto scroll-smooth scrollbar-thumb-transparent"
           items={faqitems}
           defaultActiveKey={["1"]}
           onChange={onChange}
         />
       </Footer>
       </div>
-       <p className="2xl:text-[18px] xl:text-[16px] lg:text-[14px] md:text-[12px] sm:text-[10px] text-[8px] 2xl:text-center xl:text-center lg:text-center md:text-center sm:text-center text-center 2xl:text-white xl:text-white lg:text-white md:text-white sm:text-white text-white 2xl:m-2 xl:m-2 lg:m-1 md:m-1 sm:m-1 m-1 2xl:p-1 xl:p-1 lg:p-1 md:p-1 sm:p-1 p-1 2xl:subpixel-antialiased xl:subpixel-antialiased lg:subpixel-antialiased md:subpixel-antialiased sm:subpixel-antialiased antialiased">Keyboard-Test ©{currentYear} Presented and crafted by <b>Rohit</b> with &#x2764;</p>
+       <p className="2xl:text-[18px] xl:text-[16px] lg:text-[14px] md:text-[12px] sm:text-[10px] text-[8px] 2xl:text-center xl:text-center lg:text-center md:text-center sm:text-center text-center 2xl:text-[#10100f] xl:text-[#10100f] lg:text-[#10100f] md:text-[#10100f] sm:text-[#10100f] text-[#10100f] 2xl:m-2 xl:m-2 lg:m-1 md:m-1 sm:m-1 m-1 2xl:p-1 xl:p-1 lg:p-1 md:p-1 sm:p-1 p-1 2xl:subpixel-antialiased xl:subpixel-antialiased lg:subpixel-antialiased md:subpixel-antialiased sm:subpixel-antialiased antialiased 2xl:cursor-default xl:cursor-default 2xl:cursor-default xl:cursor-default lg:cursor-default md-cursor-default sm:cursor-default cursor-default">Keyboard-Test ©{currentYear} Presented and crafted by <b>Rohit</b> with &#x2764;</p>
     </Layout>
   );
 };

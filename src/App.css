@@ -2,7 +2,7 @@
 
 .design {
   min-height: 100vh;
-  background: linear-gradient(150deg, #1e1b4b, #7c3aed, #f472b6);
+  background: linear-gradient(135deg, #ade8f4, #ebf2fa, #68d8d6);
 }
 
 .navbar {
@@ -19,9 +19,13 @@
 .navbar .ant-menu-item-selected {
   display: flex;
   align-items: center;
-  background: rgba(66, 208, 221, 0.923) !important;
-  border: 5px solid white;
+  background: #ffdd13 !important;
+  border: 5px solid #fb5607;
   margin-top: 2px;
+}
+
+.navbar .anticon-windows{
+  color:rgb(0, 0, 0)
 }
 
 .navbar-menu {
@@ -54,8 +58,8 @@
 }
 
 .ant-layout-footer{
-  margin: 15px;
-  padding: 15px;
+  margin: 10px;
+  padding: 5px;
   align-self: center;
 }
 
@@ -67,15 +71,16 @@
   color: #f3f7ff;
   background: #343a40;
   font-weight: 700;
+  cursor: default;
 }
 
 .ant-collapse-header {
-  color: #f3f7ff;
+  color: #0f0f0f;
   font-weight: 700;
 }
 
 .ant-collapse-title {
-  color: #f0f6f6;
+  color: #0f0f0f;
 }
 
 :where(.css-dev-only-do-not-override-1y106cm).ant-collapse>.ant-collapse-item {
@@ -83,7 +88,7 @@
 }
 
 .ant-collapse-expand-icon{
-  color: white;
+  color: #10100f;
 }
 
 .ant-menu-overflow{
