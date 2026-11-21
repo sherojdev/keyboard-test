@@ -10,7 +10,7 @@ import {
 } from "@ant-design/icons";
 
 import { useNewStyleMac } from "../hooks/useStyleMac";
-import { Retestmac } from "../hooks/reTestMac";
+import { Retestmac } from "../hooks/usereTestMac";
 
 export default function Buttons() {
 

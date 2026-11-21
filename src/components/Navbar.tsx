@@ -25,51 +25,51 @@ const items1 = Array.from({ length: 1 }).map((_, index) => ({
   ),
 }));
 
-const faq1 = `
+const faq1: string = `
   Keyboard-Test is a free online tool that lets you check whether every key on your keyboard works. Press a key and it lights up on the on-screen keyboard.
 `;
 
-const faq2 = `
+const faq2: string = `
   Just press any key. The matching key on the screen changes color, so you can see it was registered. Go through all the keys one by one to find any that don’t respond.
 `;
 
-const faq3 = `
+const faq3: string = `
 No. It runs in your browser, with no download, no account and no sign-up.
 `;
 
-const faq4 = `
+const faq4: string = `
 No. Key presses are only detected in your browser to light up the keys. Nothing is sent to a server or saved.
 `;
 
-const faq5 = `
+const faq5: string = `
 Press it a few more times, then clean around the key with compressed air. Check for dust or debris, and try the keyboard on another computer. If it still fails, the switch may be faulty or the key may need replacing.
 `;
 
-const faq6 = `
+const faq6: string = `
 Yes. Use the Windows layout on the home page and the Apple layout from the Apple tab. Keys such as ⌘, option and control are included.
 `;
 
-const faq7 = `
+const faq7: string = `
   Yes. Any keyboard that your browser can read will work, whether it is wired, wireless, mechanical or built into a laptop.
 `;
 
-const faq8 = `
+const faq8: string = `
 Some keys are handled by the operating system or by keyboard firmware before the browser sees them. Fn usually never reaches the browser, and shortcuts like Win or Print Screen may be intercepted by the OS.
 `;
 
-const faq9 = `
+const faq9: string = `
 Ghosting is when a keyboard fails to register some keys pressed at the same time. Hold several keys together, for example W + A + Space, and see whether all of them light up. If one doesn’t, your keyboard may have limited key rollover.
 `;
 
-const faq10 = `
+const faq10: string = `
 It is made for physical keyboards. On a phone or tablet you can use it with a connected Bluetooth or USB keyboard.
 `;
 
-const faq11 = `
+const faq11: string = `
 Chrome, Edge, Firefox, Safari and other modern browsers.
 `;
 
-const faq12 = `
+const faq12: string = `
  Yes, it is completely free.
 `;
 
@@ -161,8 +161,8 @@ const Navbar: React.FC = () => {
         />
       </Header>
 
-      <Content className="workspace 2xl:flex 2xl:flex-wrap 2xl:p-2 2xl:m-2 2xl:justify-center 2xl:content-center xl:flex xl:flex-wrap xl:p-2 xl:m-6 xl:justify-center xl:content-center lg:flex lg:flex-wrap lg:p-2 lg:m-6 lg:justify-center lg:content-center md:flex md:flex-wrap md:p-2 md:m-6 md:justify-center md:content-center sm:flex sm:flex-wrap sm:p-2 2xl:m-6 sm:justify-center sm:content-center flex flex-wrap p-2 m-6 justify-center content-center">
-        <div className="rounded-xl inner-workspace h-[200px] w-[260px] 2xl:h-[600px] 2xl:w-[1380px] xl:h-[510px] xl:w-[1140px] lg:h-[390px] lg:w-[838px] md:h-[300px] md:w-[578px] sm:h-[210px] sm:w-[450px] flex flex-wrap flex-row"> 
+      <Content className="workspace 2xl:flex 2xl:flex-wrap 2xl:p-2 2xl:m-2 2xl:justify-center 2xl:content-center xl:flex xl:flex-wrap xl:p-2 xl:m-6 xl:justify-center xl:content-center lg:flex lg:flex-wrap lg:p-2 lg:m-6 lg:justify-center lg:content-center md:flex md:flex-wrap md:p-2 md:m-6 md:justify-center md:content-center sm:flex sm:flex-wrap sm:p-2 2xl:m-6 sm:justify-center sm:content-center flex flex-wrap p-2 m-0 justify-center content-center">
+        <div className="rounded-xl inner-workspace h-[400px] w-[360px] 2xl:h-[600px] 2xl:w-[1380px] xl:h-[520px] xl:w-[1140px] lg:h-[400px] lg:w-[838px] md:h-[330px] md:w-[578px] sm:h-[220px] sm:w-[450px] 2xl:flex 2xl:flex-wrap 2xl:flex-row xl:flex xl:flex-wrap xl:flex-row lg:flex lg:flex-wrap lg:flex-row md:flex md:flex-wrap md:flex-row sm:flex sm:flex-wrap sm:flex-row flex flex-wrap flex-row"> 
            <Buttons />
         </div>
       </Content>

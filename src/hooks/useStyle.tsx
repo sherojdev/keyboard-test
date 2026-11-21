@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import { Blink } from "./useTerminalBlink";
+
 export function useNewStyle() {
 
     useEffect(() => {
