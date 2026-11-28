@@ -2,7 +2,7 @@
 
 .design-mac {
   min-height: 100vh;
-  background: linear-gradient(150deg, #FFC4B8, #FFE5B4, #BBF7D0);
+  background: linear-gradient(135deg, #ffd1dc, #fff0f3, #ff8fab);
 }
 
 .navbar-mac {
@@ -18,10 +18,11 @@
   align-Items: center;
 }
 .navbar-mac .ant-menu-item-selected {
-  background: rgba(66, 208, 221, 0.923) !important;
-  border: 5px solid rgb(246, 28, 137);
-  display: flex; 
-  align-Items: center;
+  display: flex;
+  align-items: center;
+  background: #3b1f2b !important;
+  border: 5px solid #ff0000;
+  margin-top: 2px;
 }
 
 .navbar-menu-mac {
@@ -40,11 +41,8 @@
 }
 
 .inner-workspace-mac {
-  background: linear-gradient(145deg, #FFFFFF, #F8EDEB, #F3DCD7);
-  min-height: 580;
+  background: linear-gradient(135deg, #e6d5c3, #c8b5a0, #a98467);
   padding: 14px 16px;
-  height: 88vh;
-  width: 90vw;
 }
 
 .base-mac {
@@ -74,7 +72,7 @@
 }
 
 .ant-collapse-header {
-  color: #130f0f;
+  color: #696767;
   font-weight: 700;
   text-align: left;
 }
@@ -91,7 +89,6 @@
    color: #1d3557;
 }
 #display-box-mac {
-  background-color: #000000;
   color: rgb(255, 255, 255);
   font-size: 1rem;
 }

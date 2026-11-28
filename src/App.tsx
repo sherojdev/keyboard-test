@@ -1,6 +1,6 @@
 import "./App.css";
-import Navbar from "./components/WindowsPan";
-import AppleNav from "./components/ApplePan";
+import Navbar from "./components/WindowsPanel";
+import AppleNav from "./components/MacPanel";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {

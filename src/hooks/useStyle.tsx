@@ -5,11 +5,11 @@ import { Blink } from "./useTerminalBlink";
 export function useNewStyle() {
 
     useEffect(() => {
-        let button = document.querySelectorAll<HTMLButtonElement>(".button");
+        let card = document.querySelectorAll<HTMLButtonElement>(".card");
         let animation = document.querySelector<HTMLDivElement>(".container-animation");
         const onChange = (e: KeyboardEvent) => {
             console.log(e)
-            button.forEach((btn) => {
+            card.forEach((btn) => {
                 e.stopImmediatePropagation();
                 e.stopPropagation();
                 e.preventDefault();
